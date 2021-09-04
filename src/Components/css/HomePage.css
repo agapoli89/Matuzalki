@@ -1,0 +1,17 @@
+.home-page__text {
+  border-left: 0.4rem solid #207C34;
+  padding-left: 0.5rem;
+  text-align: justify;
+  margin: 0;
+}
+
+.home-page__button {
+  padding: 0.6rem;
+  background-color: #207C34;
+  color: #E8F0D1;
+  border: none;
+  border-radius: 5px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+/*# sourceMappingURL=HomePage.css.map */

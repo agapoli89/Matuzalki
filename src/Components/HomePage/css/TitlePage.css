@@ -1,0 +1,41 @@
+.slider {
+  width: 100vw;
+  height: 30vh;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#F2F2F2), color-stop(50%, transparent)), url("../../../images/house.jpg");
+  background-image: linear-gradient(#F2F2F2, transparent 50%), url("../../../images/house.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.slider__header {
+  width: 60vw;
+  font-size: 1rem;
+  margin-left: 2vw;
+  margin-top: 0;
+  padding-top: 5vw;
+  color: #207C34;
+  font-style: italic;
+}
+
+.slider__text {
+  margin-right: 2vw;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  font-weight: 500;
+  font-style: italic;
+  color: #E8F0D1;
+  text-shadow: 2px 2px #022601;
+  font-size: 0.9rem;
+}
+/*# sourceMappingURL=TitlePage.css.map */

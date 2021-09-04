@@ -1,0 +1,23 @@
+@import '../../style/variables.scss';
+
+.header {
+    padding-top: 2vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    &__logo {
+        padding-left: 3vw;
+        width: 20vw;
+        height: auto;
+    }
+    background-image: linear-gradient(white, $background-main-color);
+}
+
+.hamburger {
+    padding-right: 3vw;
+    color: $logo-color;
+    font-size: 15vw;
+    display: flex;
+    align-items: flex-start;
+    
+}

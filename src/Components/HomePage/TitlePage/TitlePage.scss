@@ -1,0 +1,31 @@
+@import '../../../style/variables.scss';
+
+.slider {
+    width: 100vw;
+    height: 30vh;
+    background-image: linear-gradient(#F2F2F2, transparent 50%), url('../../../images/house.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &__header {
+        width: 60vw;
+        font-size: 1rem;
+        margin-left: 2vw;
+        margin-top: 0;
+        padding-top: 5vw;
+        color: $logo-color;
+        font-style: italic;
+    }
+    &__text {
+        margin-right: 2vw;
+        align-self: flex-end;
+        font-weight: 500;
+        font-style: italic;
+        color: $light-color;
+        text-shadow: 2px 2px $semi-dark-one-color;
+        font-size: 0.9rem;
+    }
+}

@@ -1,0 +1,18 @@
+@import '../../style/variables.scss';
+
+.home-page {
+    &__text {
+        border-left: 0.4rem solid $logo-color;
+        padding-left: 0.5rem;
+        text-align: justify;
+        margin: 0;
+    }
+    &__button {
+        padding: 0.6rem;
+        background-color: $logo-color;
+        color: $light-color;
+        border: none;
+        border-radius: 5px;
+        align-self: flex-end;
+    }
+}

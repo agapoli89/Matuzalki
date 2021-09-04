@@ -1,0 +1,31 @@
+.header {
+  padding-top: 2vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(#F2F2F2));
+  background-image: linear-gradient(white, #F2F2F2);
+}
+
+.header__logo {
+  padding-left: 3vw;
+  width: 20vw;
+  height: auto;
+}
+
+.hamburger {
+  padding-right: 3vw;
+  color: #207C34;
+  font-size: 15vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+/*# sourceMappingURL=Header.css.map */

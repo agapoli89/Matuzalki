@@ -1,0 +1,17 @@
+@import './style/variables.scss';
+
+.App {
+  font-size: 17px;
+  background-color: $background-main-color;
+  color: $main-text-color;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section {
+  width: 90vw;
+  display: flex;
+  flex-direction: column;
+}
+
