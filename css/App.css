@@ -15,6 +15,20 @@
 }
 
 .section {
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.article {
   width: 90vw;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -23,5 +37,20 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.article--outstanding {
+  margin-top: 2rem;
+  width: 100vw;
+  background-color: #207C34;
+  color: #E8F0D1;
+}
+
+.transition {
+  width: 100vw;
+  height: 5vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(#207C34), to(#F2F2F2));
+  background: linear-gradient(#207C34, #F2F2F2);
+  border-bottom-right-radius: 40%;
 }
 /*# sourceMappingURL=App.css.map */

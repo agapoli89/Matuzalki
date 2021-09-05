@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,OAAO,CAAC;EACJ,UAAU,EAAE,MAAM;EAClB,OAAO,EAAE,MAAM;EACf,UAAU,EAAE,MAAM;EAClB,gBAAgB,ECHP,OAAO;EDIhB,KAAK,ECHK,OAAO;EDIjB,SAAS,EAAE,MAAM;CAWpB;;AAVI,AAAD,qBAAe,CAAC;EACZ,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,MAAM;EACvB,SAAS,EAAE,IAAI;CAClB;;AACA,AAAD,aAAO,CAAC;EACJ,MAAM,EAAE,MAAM;EACd,KAAK,ECZC,OAAO;EDab,MAAM,EAAE,OAAO;CAClB",
+    "sources": [
+        "../Footer/Footer.scss",
+        "../../style/variables.scss"
+    ],
+    "names": [],
+    "file": "Footer.css"
+}

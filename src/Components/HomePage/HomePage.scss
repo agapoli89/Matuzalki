@@ -6,13 +6,52 @@
         padding-left: 0.5rem;
         text-align: justify;
         margin: 0;
+        &--outstanding {
+            border-left: none;
+            padding: 0.5rem 1rem;
+        }
     }
     &__button {
+        margin-top: 0.8rem;
         padding: 0.6rem;
         background-color: $logo-color;
         color: $light-color;
+        font-size: 0.9rem;
+        font-weight: 600;
         border: none;
         border-radius: 5px;
         align-self: flex-end;
+        &--outstanding {
+            margin: 0.5rem 1.5rem 1.5rem;
+            background-color: $light-color;
+            color: $logo-color;
+        }
+    }
+    &__adoption {
+        margin: 0;
+        height: 30vh;
+        background-image: linear-gradient(transparent 50%, $logo-color), url('../../images/pluto.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    &__title {
+        margin: 0;
+        padding-left: 1rem;
+    }
+    &__quote {
+        margin: 0.5rem 1rem;
+        font-style: italic;
+    }
+    &__support {
+        margin: 1.5rem 0 1.5rem;
+        padding: 1rem;
+        border: 0.2rem solid $logo-color;
+        border-radius: 5%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        background-color: $light-color;
     }
 }

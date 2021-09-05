@@ -1,4 +1,4 @@
-import Navigation from './Navigation';
+import Hamburger from './Hamburger';
 
 import logo from './../../images/logo2.png';
 import './Header.scss';
@@ -9,7 +9,7 @@ const Header = () => {
         <a>
           <img src={logo} alt="logo" className="header__logo"></img>
         </a>
-        <Navigation />
+        <Hamburger />
       </header>
     );
 }

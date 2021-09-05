@@ -1,0 +1,18 @@
+.navigation {
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
+}
+
+.menu {
+  list-style: none;
+  color: #207C34;
+  font-weight: 600;
+  line-height: 1.6rem;
+  cursor: pointer;
+}
+
+.menu__sublist {
+  list-style: none;
+}
+/*# sourceMappingURL=Navigation.css.map */

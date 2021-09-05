@@ -10,8 +10,27 @@
 }
 
 .section {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.article {
   width: 90vw;
   display: flex;
   flex-direction: column;
+  &--outstanding {
+    margin-top: 2rem;
+    width: 100vw;
+    background-color: $logo-color;
+    color: $light-color;
+  }
+}
+.transition {
+  width: 100vw;
+  height: 5vh;
+  background: linear-gradient($logo-color, $background-main-color);
+  border-bottom-right-radius: 40%;
 }
 

@@ -1,0 +1,17 @@
+@import '../../style/variables.scss';
+
+.navigation {
+    align-self: start;
+}
+
+.menu {
+    list-style: none;
+    color: $logo-color;
+    font-weight: 600;
+    line-height: 1.6rem;
+    cursor: pointer;
+    &__sublist {
+        list-style: none;
+    }
+}
+

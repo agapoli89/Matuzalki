@@ -1,0 +1,25 @@
+.footer {
+  margin-top: 1.5rem;
+  padding: 0.5rem;
+  text-align: center;
+  background-color: #207C34;
+  color: #E8F0D1;
+  font-size: 0.8rem;
+}
+
+.footer__social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 2rem;
+}
+
+.footer__link {
+  margin: 0.4rem;
+  color: #E8F0D1;
+  cursor: pointer;
+}
+/*# sourceMappingURL=Footer.css.map */

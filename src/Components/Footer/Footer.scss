@@ -1,0 +1,20 @@
+@import '../../style/variables.scss';
+
+.footer {
+    margin-top: 1.5rem;
+    padding: 0.5rem;
+    text-align: center;
+    background-color: $logo-color;
+    color: $light-color;
+    font-size: 0.8rem;
+    &__social-media {
+        display: flex;
+        justify-content: center;
+        font-size: 2rem;
+    }
+    &__link {
+        margin: 0.4rem;
+        color: $light-color;
+        cursor: pointer;
+    }
+}
