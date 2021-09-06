@@ -1,12 +1,14 @@
 import Hamburger from './Hamburger';
 import Navigation from './Navigation/Navigation';
+import { useMediaQuery } from 'react-responsive';
 
 import logo from './../../images/logo2.png';
 import './Header.scss';
 import { useState } from 'react';
 
 const Header = () => {
-    const [isMenuVisible, setIsMenuVisible] = useState(false);
+    const [isMenuVisible, setIsMenuVisible] = useState(true);
+    const isMediumView = useMediaQuery({ query: '(min-width:768px)' });
 
     const toggleMenu = () => setIsMenuVisible(prev => !prev);
 
@@ -16,7 +18,7 @@ const Header = () => {
           <img src={logo} alt="logo" className="header__logo"></img>
         </a>
         <Hamburger toggleMenu={toggleMenu}/>
-        {isMenuVisible && <Navigation />}
+        {isMediumView || isMenuVisible ? <Navigation /> : null}
       </header>
     );
 }

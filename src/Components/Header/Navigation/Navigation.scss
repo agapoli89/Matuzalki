@@ -1,18 +1,56 @@
 @import '../../../style/variables.scss';
+@import '../../../style/breakpoints.scss';
 
 .navigation {
     align-self: start;
     width: 100vw;
-}
-
-.menu {
-    list-style: none;
     color: $logo-color;
     font-weight: 600;
-    line-height: 1.6rem;
-    cursor: pointer;
-    &__sublist {
-        list-style: none;
+    line-height: 1.7rem;
+    @include medium {
+        width: 70vw;
+        align-self: center;
+    }
+}
+.menu {
+    list-style: none;
+    font-size: 1.5rem;
+    &__item {
+        margin-bottom: 0.7rem;
+        &__text {
+            display: flex;
+            align-content: flex-end;
+            cursor: pointer;
+        }
+        &__icon {
+            font-size: 1rem;
+            &--rotated {
+                transform: rotate(180deg);
+            }
+        }
+    }
+    @include medium {
+        padding-left: 0;
+        display: flex;
+        justify-content: end;
+        &__item {
+            margin-right: 0.8rem;  
+        }
+    }
+}
+.submenu {
+    list-style: none;
+    font-size: 1.1rem;
+    &--invisible {
+        display: none;
+    }
+    @include medium {
+        margin-top: 1rem;
+        padding-left: 0;
+        & li {
+            margin-top: 0.2rem;
+            border-bottom: 0.1rem solid $logo-color;
+        }
     }
 }
 

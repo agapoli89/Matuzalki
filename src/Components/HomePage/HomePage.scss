@@ -1,4 +1,5 @@
 @import '../../style/variables.scss';
+@import '../../style/breakpoints.scss';
 
 .home-page {
     &__text {
@@ -15,7 +16,6 @@
         }
     }
     &__button {
-        margin-top: 0.8rem;
         padding: 0.6rem;
         background-color: $logo-color;
         color: $light-color;
@@ -32,11 +32,22 @@
     }
     &__adoption {
         margin: 0;
-        height: 30vh;
+        height: 60vw;
         background-image: linear-gradient(transparent 50%, $logo-color), url('../../images/pluto.jpg');
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
+        @include medium {
+            height: 40vw;
+        }
+    }
+    &__description {
+        display: flex;
+        flex-direction: column;
+        @include medium {
+            align-self: center;
+            width: 80%;
+        }
     }
     &__title {
         margin: 0;
