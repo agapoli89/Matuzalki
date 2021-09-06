@@ -2,7 +2,7 @@ import {IoMenu} from "react-icons/io5";
 
 const Hamburger = () => {
     return (  
-        <div className="hamburger"><IoMenu /></div>
+        <button className="hamburger"><IoMenu /></button>
     );
 }
  
