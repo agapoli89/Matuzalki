@@ -5,6 +5,7 @@
     width: 100vw;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     background-image: linear-gradient(white, $background-main-color);
     &__logo {
         padding-left: 3vw;
