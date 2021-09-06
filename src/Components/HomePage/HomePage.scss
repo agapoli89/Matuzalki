@@ -8,7 +8,10 @@
         margin: 0;
         &--outstanding {
             border-left: none;
-            padding: 0.5rem 1rem;
+            padding: 0.5rem 1rem; 
+        }
+        &--start {
+            text-align: left;
         }
     }
     &__button {
