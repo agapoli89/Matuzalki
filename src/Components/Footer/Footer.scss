@@ -3,6 +3,8 @@
 .footer {
     margin-top: 1.5rem;
     padding: 0.5rem;
+    width: 100vw;
+    box-sizing: border-box;
     text-align: center;
     background-color: $logo-color;
     color: $light-color;

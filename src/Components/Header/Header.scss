@@ -5,19 +5,21 @@
     width: 100vw;
     display: flex;
     justify-content: space-between;
+    background-image: linear-gradient(white, $background-main-color);
     &__logo {
         padding-left: 3vw;
         width: 20vw;
         height: auto;
-    }
-    background-image: linear-gradient(white, $background-main-color);
+        cursor: pointer;
+    }  
 }
-
 .hamburger {
     padding-right: 3vw;
+    background-color: transparent;
     color: $logo-color;
     font-size: 15vw;
+    border: none;
     display: flex;
     align-items: flex-start;
-    
+    cursor: pointer;
 }
