@@ -15,6 +15,21 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  @include small {
+    font-size: 1.1rem;
+  }
+  @include medium {
+    font-size: 1.2rem;
+  }
+  @include large {
+    font-size: 1rem;
+  }
+  @include extra-large {
+    font-size: 1.1rem;
+  }
+  @include extra-large {
+    font-size: 1.2rem;
+  }
 }
 
 .article {
@@ -27,7 +42,25 @@
     background-color: $logo-color;
     color: $light-color;
   }
+  @include small {
+    width: 80vw;
+    &--outstanding {
+      width: 100vw;
+    }
+  }
   @include medium {
+    width: 70vw;
+    &--outstanding {
+      width: 100vw;
+    }
+  }
+  @include large {
+    width: 90vw;
+    &--outstanding {
+      width: 100vw;
+    }
+  }
+  @include extra-large {
     width: 80vw;
     &--outstanding {
       width: 100vw;

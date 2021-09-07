@@ -7,12 +7,17 @@
         padding-left: 0.5rem;
         text-align: justify;
         margin: 0;
+        display: flex;
+        flex-direction: column;
         &--outstanding {
             border-left: none;
             padding: 0.5rem 1rem; 
         }
         &--start {
             text-align: left;
+        }
+        &--support {
+            display: block;
         }
     }
     &__button {
@@ -44,6 +49,10 @@
     &__description {
         display: flex;
         flex-direction: column;
+        @include small {
+            align-self: center;
+            width: 90%;
+        }
         @include medium {
             align-self: center;
             width: 80%;
@@ -59,13 +68,101 @@
     }
     &__support {
         margin: 1.5rem 0 1.5rem;
-        padding: 1rem;
+        padding: 1.5rem;
         border: 0.2rem solid $logo-color;
-        border-radius: 5%;
+        border-radius: 5px;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
         align-items: center;
         background-color: $light-color;
+    }
+}
+
+.about-us-large {
+    display: grid;
+    grid-template-areas: 
+      "head head head head"
+      "text text image-box image-box";
+    grid-template-rows: 4rem 450px;
+    grid-template-columns: 1fr 10rem 250px 250px;
+    column-gap: 2rem;
+    &__header {
+        grid-area: head;
+    }
+    &__text {
+        grid-area: text;
+    }
+    &__button {
+        grid-area: button;
+    }
+    &__image-box {
+        grid-area: image-box;
+        position: relative;
+    }
+    &__image-item {
+        position: absolute;
+		color: #333;
+		padding: 10px 10px 20px 10px;
+		width: 200px;
+		border: 1px solid #BFBFBF;
+		background-color: white;
+		z-index: 2;
+		font-size: 0.9em;
+		-webkit-box-shadow: 2px 2px 4px rgba(0,0, 0, 0.3);
+		-moz-box-shadow: 2px 2px 4px rgba(0,0, 0, 0.3);
+		box-shadow: 2px 2px 4px rgba(0,0, 0, 0.3);
+        transform: rotate(-10deg);
+        transition: -webkit-transform 0.5s ease-in;
+        &:hover {
+            transform: rotate(0deg);
+            z-index: 3;
+        }
+        & img {
+            margin: 0 0 5px;
+            width: 200px;
+            max-height: 250px;
+        }
+        &--Basia {
+            right: 150px;
+            width: 150px;
+            transform: rotate(15deg);
+        }
+        &--Ela {
+            right: 0px;
+            bottom: 0;
+            transform: rotate(-5deg);
+        }
+        &--Joasia {
+            left: 30px;
+            bottom: 40px;
+            width: 150px;
+            transform: rotate(5deg);
+            z-index: 0;
+        }
+        &--Asia {
+            right: 0px;
+            top: 0px;
+            width: 130px;
+            transform: rotate(-2deg);
+        }
+        &--Magda {
+            left: 180px;
+            bottom: 0px;
+            width: 115px;
+            transform: rotate(2deg);
+        }
+    }
+    &__image-item--Basia img {
+        width: 150px;
+    }
+    &__image-item--Joasia img {
+        width: 150px;
+    }
+    &__image-item--Asia img {
+        width: 130px;
+    }
+    &__image-item--Magda img {
+        width: 115px;
     }
 }

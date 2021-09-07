@@ -1,4 +1,5 @@
 @import '../../style/variables.scss';
+@import '../../style/breakpoints.scss';
 
 .footer {
     margin-top: 1.5rem;
@@ -13,6 +14,12 @@
         display: flex;
         justify-content: center;
         font-size: 2rem;
+        @include small {
+            font-size: 2.3rem;
+        }
+        @include medium {
+            font-size: 2.5rem;
+        }
     }
     &__link {
         margin: 0.4rem;

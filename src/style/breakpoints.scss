@@ -18,3 +18,13 @@
         @content;
     }
 }
+@mixin extra-large {
+    @media screen and (min-width: 1200px) {
+        @content;
+    }
+}
+@mixin extra-extra-large {
+    @media screen and (min-width: 1200px) {
+        @content;
+    }
+}

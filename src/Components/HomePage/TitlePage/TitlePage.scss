@@ -41,4 +41,7 @@
     @include medium {
         height: 40vw;
     }
+    @include large {
+        height: 32vw;
+    }
 }
