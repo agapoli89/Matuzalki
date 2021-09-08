@@ -26,6 +26,14 @@
   }
 }
 
+@media screen and (min-width: 1700px) {
+  .header {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .hamburger {
   padding-right: 3vw;
   background-color: transparent;

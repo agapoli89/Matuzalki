@@ -301,6 +301,13 @@
   }
 }
 
+@media screen and (min-width: 1700px) {
+  .about-us-large {
+    -ms-grid-rows: 6rem 450px;
+        grid-template-rows: 6rem 450px;
+  }
+}
+
 .about-us-large__header {
   -ms-grid-row: 1;
   -ms-grid-column: 1;

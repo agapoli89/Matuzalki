@@ -204,6 +204,9 @@
     @include extra-extra-large {
         column-gap: 5rem;
     }
+    @include huge {
+        grid-template-rows: 6rem 450px;
+    }
     &__header {
         grid-area: head;
     }

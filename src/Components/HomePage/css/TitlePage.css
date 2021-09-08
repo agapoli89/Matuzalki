@@ -40,14 +40,20 @@
   }
 }
 
+@media screen and (min-width: 1700px) {
+  .title-page__header {
+    margin-left: 10vw;
+  }
+}
+
 .title-page__text {
-  margin-right: 2vw;
+  margin-right: 10vw;
   -ms-flex-item-align: end;
       align-self: flex-end;
   font-weight: 500;
   font-style: italic;
   color: #E8F0D1;
-  background-color: rgba(10, 9, 9, 0.48);
+  background-color: rgba(10, 9, 9, 0.58);
   font-size: 0.9rem;
 }
 

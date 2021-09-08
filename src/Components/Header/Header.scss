@@ -16,7 +16,10 @@
         @include medium {
             width: 10vw;
         }
-    }  
+    } 
+    @include huge {
+        justify-content: center;
+    }
 }
 .hamburger {
     padding-right: 3vw;

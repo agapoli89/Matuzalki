@@ -25,14 +25,17 @@
         @include small {
             width: 50vw;
         }
+        @include huge {
+            margin-left: 10vw;
+        }
     }
     &__text {
-        margin-right: 2vw;
+        margin-right: 10vw;
         align-self: flex-end;
         font-weight: 500;
         font-style: italic;
         color: $light-color;
-        background-color: rgba(10, 9, 9, 0.48);
+        background-color: rgba(10, 9, 9, 0.58);
         font-size: 0.9rem;
         @include small {
             font-size: 1.1rem;
