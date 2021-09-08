@@ -191,6 +191,10 @@
           transform: rotate(15deg);
 }
 
+.about-us-large__image-item--Basia img {
+  width: 150px;
+}
+
 .about-us-large__image-item--Ela {
   right: 0px;
   bottom: 0;
@@ -207,6 +211,10 @@
   z-index: 0;
 }
 
+.about-us-large__image-item--Joasia img {
+  width: 150px;
+}
+
 .about-us-large__image-item--Asia {
   right: 0px;
   top: 0px;
@@ -215,24 +223,16 @@
           transform: rotate(-2deg);
 }
 
+.about-us-large__image-item--Asia img {
+  width: 130px;
+}
+
 .about-us-large__image-item--Magda {
   left: 180px;
   bottom: 0px;
   width: 110px;
   -webkit-transform: rotate(2deg);
           transform: rotate(2deg);
-}
-
-.about-us-large__image-item--Basia img {
-  width: 150px;
-}
-
-.about-us-large__image-item--Joasia img {
-  width: 150px;
-}
-
-.about-us-large__image-item--Asia img {
-  width: 130px;
 }
 
 .about-us-large__image-item--Magda img {

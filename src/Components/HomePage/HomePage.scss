@@ -79,6 +79,72 @@
     }
 }
 
+.polaroid {
+    position: absolute;
+    color: #333;
+    padding: 10px 10px 20px 10px;
+    width: 200px;
+    border: 1px solid #BFBFBF;
+    background-color: white;
+    z-index: 2;
+    font-size: 0.9em;
+    -webkit-box-shadow: 2px 2px 4px rgba(0,0, 0, 0.3);
+    -moz-box-shadow: 2px 2px 4px rgba(0,0, 0, 0.3);
+    box-shadow: 2px 2px 4px rgba(0,0, 0, 0.3);
+    transform: rotate(-10deg);
+    transition: -webkit-transform 0.5s ease-in;
+    &:hover {
+        transform: rotate(0deg);
+        z-index: 3;
+    }
+    & img {
+        margin: 0 0 5px;
+        width: 200px;
+        max-height: 250px;
+    }
+    &--Basia {
+        right: 150px;
+        width: 150px;
+        transform: rotate(15deg);
+        & img {
+            width: 150px;
+        }
+    }
+    &--Ela {
+        right: 0px;
+        bottom: 0;
+        transform: rotate(-5deg);
+    }
+    &--Joasia {
+        left: 30px;
+        bottom: 40px;
+        width: 150px;
+        transform: rotate(5deg);
+        z-index: 0;
+        & img {
+            width: 150px;
+        }
+    }
+    &--Asia {
+        right: 0px;
+        top: 0px;
+        width: 130px;
+        transform: rotate(-2deg);
+        & img {
+            width: 130px;
+        }
+    }
+    &--Magda {
+        left: 180px;
+        bottom: 0px;
+        width: 110px;
+        transform: rotate(2deg);
+        & img {
+            width: 110px;
+        }
+    }
+}
+
 .about-us-large {
     margin: 2rem 0 4rem;
     display: grid;
@@ -100,70 +166,5 @@
     &__image-box {
         grid-area: image-box;
         position: relative;
-    }
-    &__image-item {
-        position: absolute;
-		color: #333;
-		padding: 10px 10px 20px 10px;
-		width: 200px;
-		border: 1px solid #BFBFBF;
-		background-color: white;
-		z-index: 2;
-		font-size: 0.9em;
-		-webkit-box-shadow: 2px 2px 4px rgba(0,0, 0, 0.3);
-		-moz-box-shadow: 2px 2px 4px rgba(0,0, 0, 0.3);
-		box-shadow: 2px 2px 4px rgba(0,0, 0, 0.3);
-        transform: rotate(-10deg);
-        transition: -webkit-transform 0.5s ease-in;
-        &:hover {
-            transform: rotate(0deg);
-            z-index: 3;
-        }
-        & img {
-            margin: 0 0 5px;
-            width: 200px;
-            max-height: 250px;
-        }
-        &--Basia {
-            right: 150px;
-            width: 150px;
-            transform: rotate(15deg);
-        }
-        &--Ela {
-            right: 0px;
-            bottom: 0;
-            transform: rotate(-5deg);
-        }
-        &--Joasia {
-            left: 30px;
-            bottom: 40px;
-            width: 150px;
-            transform: rotate(5deg);
-            z-index: 0;
-        }
-        &--Asia {
-            right: 0px;
-            top: 0px;
-            width: 130px;
-            transform: rotate(-2deg);
-        }
-        &--Magda {
-            left: 180px;
-            bottom: 0px;
-            width: 110px;
-            transform: rotate(2deg);
-        }
-    }
-    &__image-item--Basia img {
-        width: 150px;
-    }
-    &__image-item--Joasia img {
-        width: 150px;
-    }
-    &__image-item--Asia img {
-        width: 130px;
-    }
-    &__image-item--Magda img {
-        width: 110px;
     }
 }

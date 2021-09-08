@@ -27,12 +27,12 @@ const HomePage = () => {
                 </div>
                 
                 {isLargeView && <div className="about-us-large__image-box">
-                    <div className="about-us-large__image-item about-us-large__image-item--Miron"><img src={Miron} alt="Miron" />Miron</div>
-                    <div className="about-us-large__image-item about-us-large__image-item--Basia"><img src={Basia} alt="Basia" />Basia</div>
-                    <div className="about-us-large__image-item about-us-large__image-item--Ela"><img src={Ela} alt="Ela" />Ela</div>
-                    <div className="about-us-large__image-item about-us-large__image-item--Joasia"><img src={Joasia} alt="Joasia" />Joasia</div>
-                    <div className="about-us-large__image-item about-us-large__image-item--Asia"><img src={Asia} alt="Asia" />Asia</div>
-                    <div className="about-us-large__image-item about-us-large__image-item--Magda"><img src={Magda} alt="Magda" />Magda</div>
+                    <div className="polaroid polaroid--Miron"><img src={Miron} alt="Miron" />Miron</div>
+                    <div className="polaroid polaroid--Basia"><img src={Basia} alt="Basia" />Basia</div>
+                    <div className="polaroid polaroid--Ela"><img src={Ela} alt="Ela" />Ela</div>
+                    <div className="polaroid polaroid--Joasia"><img src={Joasia} alt="Joasia" />Joasia</div>
+                    <div className="polaroid polaroid--Asia"><img src={Asia} alt="Asia" />Asia</div>
+                    <div className="polaroid polaroid--Magda"><img src={Magda} alt="Magda" />Magda</div>
                 </div>}
             </article>
             <article className="article article--outstanding">
@@ -59,7 +59,7 @@ const HomePage = () => {
                 </div>
                 <p className="home-page__text home-page__text--support">Możesz też przekazać swój <strong>1%&nbsp;podatku</strong>. To realna pomoc, która nic Cię nie kosztuje :)</p>
                 <div className="home-page__support">
-                    <strong>KRS 0000615358</strong>
+                    <strong>KRS 0000615358</strong> 
                 </div>
             </article>
         </section>
