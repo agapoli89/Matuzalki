@@ -15,7 +15,7 @@
 }
 
 .section {
-  width: 100vw;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -26,6 +26,36 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media screen and (min-width: 576px) {
+  .section {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .section {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .section {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .section {
+    font-size: 1.2rem;
+  }
 }
 
 .article {
@@ -41,16 +71,51 @@
 
 .article--outstanding {
   margin-top: 2rem;
-  width: 100vw;
+  width: 100%;
   background-color: #207C34;
   color: #E8F0D1;
 }
 
+@media screen and (min-width: 576px) {
+  .article {
+    width: 80vw;
+  }
+  .article--outstanding {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .article {
+    width: 70vw;
+  }
+  .article--outstanding {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .article {
+    width: 90vw;
+  }
+  .article--outstanding {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .article {
+    width: 80vw;
+  }
+  .article--outstanding {
+    width: 100%;
+  }
+}
+
 .transition {
-  width: 100vw;
+  width: 100%;
   height: 5vh;
   background: -webkit-gradient(linear, left top, left bottom, from(#207C34), to(#F2F2F2));
   background: linear-gradient(#207C34, #F2F2F2);
-  border-bottom-right-radius: 40%;
 }
 /*# sourceMappingURL=App.css.map */

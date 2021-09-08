@@ -3,6 +3,13 @@
   padding-left: 0.5rem;
   text-align: justify;
   margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .home-page__text--outstanding {
@@ -10,8 +17,15 @@
   padding: 0.5rem 1rem;
 }
 
+.home-page__text--start {
+  text-align: left;
+}
+
+.home-page__text--support {
+  display: block;
+}
+
 .home-page__button {
-  margin-top: 0.8rem;
   padding: 0.6rem;
   background-color: #207C34;
   color: #E8F0D1;
@@ -31,12 +45,46 @@
 
 .home-page__adoption {
   margin: 0;
-  height: 30vh;
+  height: 60vw;
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), to(#207C34)), url("../../images/pluto.jpg");
   background-image: linear-gradient(transparent 50%, #207C34), url("../../images/pluto.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 768px) {
+  .home-page__adoption {
+    height: 50vw;
+  }
+}
+
+.home-page__description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media screen and (min-width: 576px) {
+  .home-page__description {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    width: 90%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .home-page__description {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    width: 80%;
+  }
 }
 
 .home-page__title {
@@ -51,9 +99,9 @@
 
 .home-page__support {
   margin: 1.5rem 0 1.5rem;
-  padding: 1rem;
+  padding: 1.5rem;
   border: 0.2rem solid #207C34;
-  border-radius: 5%;
+  border-radius: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -67,5 +115,127 @@
       -ms-flex-align: center;
           align-items: center;
   background-color: #E8F0D1;
+}
+
+.about-us-large {
+  margin: 2rem 0 4rem;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "head head head head" "text text image-box image-box";
+  -ms-grid-rows: 4rem 450px;
+      grid-template-rows: 4rem 450px;
+  -ms-grid-columns: 1fr 10rem 250px 250px;
+      grid-template-columns: 1fr 10rem 250px 250px;
+  -webkit-column-gap: 2rem;
+          column-gap: 2rem;
+}
+
+.about-us-large__header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: head;
+}
+
+.about-us-large__text {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: text;
+}
+
+.about-us-large__button {
+  grid-area: button;
+}
+
+.about-us-large__image-box {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
+  grid-area: image-box;
+  position: relative;
+}
+
+.about-us-large__image-item {
+  position: absolute;
+  color: #333;
+  padding: 10px 10px 20px 10px;
+  width: 200px;
+  border: 1px solid #BFBFBF;
+  background-color: white;
+  z-index: 2;
+  font-size: 0.9em;
+  -webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  -webkit-transform: rotate(-10deg);
+          transform: rotate(-10deg);
+  transition: -webkit-transform 0.5s ease-in;
+}
+
+.about-us-large__image-item:hover {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  z-index: 3;
+}
+
+.about-us-large__image-item img {
+  margin: 0 0 5px;
+  width: 200px;
+  max-height: 250px;
+}
+
+.about-us-large__image-item--Basia {
+  right: 150px;
+  width: 150px;
+  -webkit-transform: rotate(15deg);
+          transform: rotate(15deg);
+}
+
+.about-us-large__image-item--Ela {
+  right: 0px;
+  bottom: 0;
+  -webkit-transform: rotate(-5deg);
+          transform: rotate(-5deg);
+}
+
+.about-us-large__image-item--Joasia {
+  left: 30px;
+  bottom: 40px;
+  width: 150px;
+  -webkit-transform: rotate(5deg);
+          transform: rotate(5deg);
+  z-index: 0;
+}
+
+.about-us-large__image-item--Asia {
+  right: 0px;
+  top: 0px;
+  width: 130px;
+  -webkit-transform: rotate(-2deg);
+          transform: rotate(-2deg);
+}
+
+.about-us-large__image-item--Magda {
+  left: 180px;
+  bottom: 0px;
+  width: 110px;
+  -webkit-transform: rotate(2deg);
+          transform: rotate(2deg);
+}
+
+.about-us-large__image-item--Basia img {
+  width: 150px;
+}
+
+.about-us-large__image-item--Joasia img {
+  width: 150px;
+}
+
+.about-us-large__image-item--Asia img {
+  width: 130px;
+}
+
+.about-us-large__image-item--Magda img {
+  width: 110px;
 }
 /*# sourceMappingURL=HomePage.css.map */

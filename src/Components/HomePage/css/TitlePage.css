@@ -1,6 +1,6 @@
-.slider {
-  width: 100vw;
-  height: 30vh;
+.title-page {
+  width: 100%;
+  height: 50vw;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#F2F2F2), color-stop(50%, transparent)), url("../../../images/house.jpg");
   background-image: linear-gradient(#F2F2F2, transparent 50%), url("../../../images/house.jpg");
   background-position: center;
@@ -18,7 +18,7 @@
           justify-content: space-between;
 }
 
-.slider__header {
+.title-page__header {
   width: 70vw;
   font-size: 1rem;
   margin-left: 2vw;
@@ -28,7 +28,19 @@
   font-style: italic;
 }
 
-.slider__text {
+@media screen and (min-width: 475px) {
+  .title-page__header {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .title-page__header {
+    width: 50vw;
+  }
+}
+
+.title-page__text {
   margin-right: 2vw;
   -ms-flex-item-align: end;
       align-self: flex-end;
@@ -37,5 +49,23 @@
   color: #E8F0D1;
   text-shadow: 2px 2px #022601;
   font-size: 0.9rem;
+}
+
+@media screen and (min-width: 576px) {
+  .title-page__text {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .title-page {
+    height: 40vw;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .title-page {
+    height: 32vw;
+  }
 }
 /*# sourceMappingURL=TitlePage.css.map */
