@@ -1,4 +1,4 @@
-# Website creates for Fundacja Pomocy Zwierzętom "Matuzalki"
+# This is a website creating for Fundacja Pomocy Zwierzętom "Matuzalki"
 
 ## Technologies: React, SCSS.
 
