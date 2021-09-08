@@ -9,9 +9,8 @@
   flex-direction: column;
   align-items: center;
 }
-
 .section {
-  width: 100vw;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -27,7 +26,7 @@
   @include extra-large {
     font-size: 1.1rem;
   }
-  @include extra-large {
+  @include extra-extra-large {
     font-size: 1.2rem;
   }
 }
@@ -38,37 +37,37 @@
   flex-direction: column;
   &--outstanding {
     margin-top: 2rem;
-    width: 100vw;
+    width: 100%;
     background-color: $logo-color;
     color: $light-color;
   }
   @include small {
     width: 80vw;
     &--outstanding {
-      width: 100vw;
+      width: 100%;
     }
   }
   @include medium {
     width: 70vw;
     &--outstanding {
-      width: 100vw;
+      width: 100%;
     }
   }
   @include large {
     width: 90vw;
     &--outstanding {
-      width: 100vw;
+      width: 100%;
     }
   }
   @include extra-large {
     width: 80vw;
     &--outstanding {
-      width: 100vw;
+      width: 100%;
     }
   }
 }
 .transition {
-  width: 100vw;
+  width: 100%;
   height: 5vh;
   background: linear-gradient($logo-color, $background-main-color);
 }
