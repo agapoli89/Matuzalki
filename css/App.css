@@ -54,7 +54,13 @@
 
 @media screen and (min-width: 1400px) {
   .section {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (min-width: 1700px) {
+  .section {
+    font-size: 1.4rem;
   }
 }
 

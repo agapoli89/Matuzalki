@@ -28,3 +28,8 @@
         @content;
     }
 }
+@mixin huge {
+    @media screen and (min-width: 1700px) {
+        @content;
+    }
+}

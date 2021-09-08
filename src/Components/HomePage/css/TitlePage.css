@@ -47,7 +47,7 @@
   font-weight: 500;
   font-style: italic;
   color: #E8F0D1;
-  text-shadow: 2px 2px #022601;
+  background-color: rgba(10, 9, 9, 0.48);
   font-size: 0.9rem;
 }
 
@@ -65,7 +65,7 @@
 
 @media screen and (min-width: 992px) {
   .title-page {
-    height: 32vw;
+    height: 35vw;
   }
 }
 /*# sourceMappingURL=TitlePage.css.map */

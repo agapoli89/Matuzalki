@@ -10,6 +10,12 @@
     background-color: $logo-color;
     color: $light-color;
     font-size: 0.8rem;
+    @include extra-extra-large {
+        font-size: 1rem;
+    }
+    @include huge {
+        font-size: 1.3rem;
+    }
     &__social-media {
         display: flex;
         justify-content: center;
@@ -19,6 +25,9 @@
         }
         @include medium {
             font-size: 2.5rem;
+        }
+        @include huge {
+            font-size: 3rem;
         }
     }
     &__link {
