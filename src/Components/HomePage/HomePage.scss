@@ -11,7 +11,10 @@
         flex-direction: column;
         &--outstanding {
             border-left: none;
-            padding: 0.5rem 1rem; 
+            padding: 0.5rem 1rem;
+            @include large {
+                grid-area: text;
+            } 
         }
         &--start {
             text-align: left;
@@ -29,6 +32,7 @@
         border: none;
         border-radius: 5px;
         align-self: flex-end;
+        cursor: pointer;
         &--outstanding {
             margin: 0.5rem 1.5rem 1.5rem;
             background-color: $light-color;
@@ -57,10 +61,32 @@
             align-self: center;
             width: 80%;
         }
+        @include large {
+            display: grid;
+            grid-template-areas: 
+            "head head"
+            "image-box text";
+            grid-template-rows: 4rem 450px;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 2rem;
+        }
+        @include extra-large {
+            grid-template-columns: 40% 1fr;
+        }
+        @include extra-extra-large {
+            width: 70%;
+        }
+        &__image-box {
+            grid-area: image-box;
+            position: relative;
+        }
     }
     &__title {
         margin: 0;
         padding-left: 1rem;
+        @include large {
+            grid-area: head;
+        }
     }
     &__quote {
         margin: 0.5rem 1rem;
@@ -95,7 +121,7 @@
     transition: -webkit-transform 0.5s ease-in;
     &:hover {
         transform: rotate(0deg);
-        z-index: 3;
+        z-index: 4;
     }
     & img {
         margin: 0 0 5px;
@@ -135,7 +161,7 @@
         }
     }
     &--Magda {
-        left: 180px;
+        left: 160px;
         bottom: 0px;
         width: 110px;
         transform: rotate(2deg);
@@ -143,17 +169,37 @@
             width: 110px;
         }
     }
+    &--Bronek {
+        width: 160px;
+        transform: rotate(-5deg);
+        & img {
+            width: 160px;
+        }
+    }
+    &--Donek {
+        right: 20px;
+        transform: rotate(-5deg);
+        z-index: 3;
+    }
+    &--Ignas {
+        right: 30px;
+        top: 180px;
+        transform: rotate(10deg);
+    }
 }
 
 .about-us-large {
     margin: 2rem 0 4rem;
     display: grid;
     grid-template-areas: 
-      "head head head head"
-      "text text image-box image-box";
+      "head head"
+      "text image-box";
     grid-template-rows: 4rem 450px;
-    grid-template-columns: 1fr 10rem 250px 250px;
+    grid-template-columns: 1fr 500px;
     column-gap: 2rem;
+    @include extra-extra-large {
+        column-gap: 5rem;
+    }
     &__header {
         grid-area: head;
     }
@@ -166,5 +212,30 @@
     &__image-box {
         grid-area: image-box;
         position: relative;
+    }
+}
+
+.support-large {
+    margin: 2rem 0 2rem;
+    display: grid;
+    grid-template-areas: 
+      "text image-box";
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 4rem;
+    @include extra-extra-large {
+        column-gap: 8rem;
+    }
+    &__text {
+        grid-area: text;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    &__image {
+        grid-area: image-box;
+        & img {
+            width: 100%;
+        }
     }
 }

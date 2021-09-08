@@ -10,6 +10,10 @@ import Ela from '../../images/Ela.png';
 import Joasia from '../../images/Joasia.png';
 import Asia from '../../images/Asia.png';
 import Magda from '../../images/Magda.png';
+import Bronek from '../../images/Dogs/Bronek.png';
+import Donek from '../../images/Dogs/Donek.png';
+import Ignas from '../../images/Dogs/Ignas.png';
+import KRS from '../../images/krs.png';
 
 const HomePage = () => {
     const isLargeView = useMediaQuery({ query: '(min-width:992px)' });
@@ -39,28 +43,42 @@ const HomePage = () => {
                 <div className="home-page__adoption"></div>
                 <div className="home-page__description">
                     <h3 className="home-page__title">Adopcja...</h3>
-                    <div className="home-page__text home-page__text--outstanding">...temat rzeka. O&nbsp;adopcji bezpańskich zwierząt napisano już chyba wszystko. Bezspornie jest to&nbsp;forma pomocy udzielona komuś, kto nie potrafi obronić się sam i&nbsp;jest całkowicie zależny od&nbsp;człowieka. <blockquote className="home-page__quote"><p>„Adoptując jednego psa nie zmienisz całego świata, ale&nbsp;zmienisz świat tego psa”.</p></blockquote> I&nbsp;to już wystarczająco dużo, aby walczyć o&nbsp;jednego psa, każdego po kolei.</div>
-                    <strong className="home-page__text home-page__text--outstanding home-page__text--start">KONTAKT W SPRAWIE ADOPCJI: </strong>
-                    <strong className="home-page__text home-page__text--outstanding home-page__text--start">e-mail: fpz@matuzalki.pl</strong>
-                    <strong className="home-page__text home-page__text--outstanding home-page__text--start">tel.: 519 499 344 (ELA)</strong>
-                    <button className="home-page__button home-page__button--outstanding">Dowiedz się więcej</button>
+                    {isLargeView && <div className="home-page__description__image-box">
+                        <div className="polaroid polaroid--Bronek"><img src={Bronek} alt="Bronek" />Bronek</div>
+                        <div className="polaroid polaroid--Donek"><img src={Donek} alt="Donek" />Donek</div>
+                        <div className="polaroid polaroid--Ignas"><img src={Ignas} alt="Ignaś" />Ignaś</div>
+                    </div>}
+                    <div className="home-page__text home-page__text--outstanding">
+                        <p style={{marginTop: 0}}>...temat rzeka. O&nbsp;adopcji bezpańskich zwierząt napisano już chyba wszystko. Bezspornie jest to&nbsp;forma pomocy udzielona komuś, kto nie potrafi obronić się sam i&nbsp;jest całkowicie zależny od&nbsp;człowieka.</p>
+                        <blockquote className="home-page__quote">„Adoptując jednego psa nie zmienisz całego świata, ale&nbsp;zmienisz świat tego psa”.</blockquote> 
+                        <p>I&nbsp;to już wystarczająco dużo, aby walczyć o&nbsp;jednego psa, każdego po kolei.</p>
+                        <strong>KONTAKT W SPRAWIE ADOPCJI: </strong>
+                        <strong>e-mail: fpz@matuzalki.pl</strong>
+                        <strong>tel.: 519 499 344 (ELA)</strong>
+                        <button className="home-page__button home-page__button--outstanding">Dowiedz się więcej</button>
+                    </div>
                 </div>
             </article>
             <div className="transition"></div>
-            <article className="article">
-                <h3>Wesprzyj nas</h3>
-                <p className="home-page__text"> Matuzalki to&nbsp;organizacja NON-PROFIT. Jeżeli chcesz i&nbsp;możesz to&nbsp;wspomóż nasze zwierzaki grosikiem przekazując darowiznę.</p>
-                <div className="home-page__support">
-                    <h3 style={{margin: 0}}>ING BANK ŚLĄSKI:</h3>
-                    <strong style={{textAlign: 'center'}}>57 1050 1575 1000 0090 3092 7736</strong>
-                    <h4 style={{marginBottom: 4}}>Wpłaty spoza Polski (euro)</h4>
-                    <strong>Kod SWIFT : INGBPLPW</strong>
-                    <strong style={{textAlign: 'center'}}>PL 35 1050 1575 1000 0090 3092 7744</strong>
+            <article className={`article ${isLargeView && "support-large"}`}>
+                <div className="support-large__text">
+                    <h3>Wesprzyj nas</h3>
+                    <p className="home-page__text"> Matuzalki to&nbsp;organizacja NON-PROFIT. Jeżeli chcesz i&nbsp;możesz to&nbsp;wspomóż nasze zwierzaki grosikiem przekazując darowiznę.</p>
+                    <div className="home-page__support">
+                        <h3 style={{margin: 0}}>ING BANK ŚLĄSKI:</h3>
+                        <strong style={{textAlign: 'center'}}>57 1050 1575 1000 0090 3092 7736</strong>
+                        <h4 style={{marginBottom: 4}}>Wpłaty spoza Polski (euro)</h4>
+                        <strong>Kod SWIFT : INGBPLPW</strong>
+                        <strong style={{textAlign: 'center'}}>PL 35 1050 1575 1000 0090 3092 7744</strong>
+                    </div>
+                    <p className="home-page__text home-page__text--support">Możesz też przekazać swój <strong>1%&nbsp;podatku</strong>. To realna pomoc, która nic Cię nie kosztuje :)</p>
+                    <div className="home-page__support">
+                        <strong>KRS 0000615358</strong> 
+                    </div>
                 </div>
-                <p className="home-page__text home-page__text--support">Możesz też przekazać swój <strong>1%&nbsp;podatku</strong>. To realna pomoc, która nic Cię nie kosztuje :)</p>
-                <div className="home-page__support">
-                    <strong>KRS 0000615358</strong> 
-                </div>
+                {isLargeView && <div className="support-large__image">
+                    <img src={KRS} alt="KRS" />    
+                </div>}
             </article>
         </section>
     );
