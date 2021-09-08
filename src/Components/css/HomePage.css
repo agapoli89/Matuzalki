@@ -33,6 +33,11 @@
   display: block;
 }
 
+.home-page__text a {
+  text-decoration: none;
+  color: #E8F0D1;
+}
+
 .home-page__button {
   padding: 0.6rem;
   background-color: #207C34;

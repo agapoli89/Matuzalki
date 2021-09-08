@@ -22,6 +22,10 @@
         &--support {
             display: block;
         }
+        & a {
+            text-decoration: none;
+            color: $light-color;
+        }
     }
     &__button {
         padding: 0.6rem;
