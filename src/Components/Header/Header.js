@@ -7,7 +7,7 @@ import './Header.scss';
 import { useState } from 'react';
 
 const Header = () => {
-    const [isMenuVisible, setIsMenuVisible] = useState(true);
+    const [isMenuVisible, setIsMenuVisible] = useState(false);
     const isMediumView = useMediaQuery({ query: '(min-width:768px)' });
 
     const toggleMenu = () => setIsMenuVisible(prev => !prev);
