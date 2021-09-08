@@ -53,7 +53,7 @@ const HomePage = () => {
                         <blockquote className="home-page__quote">„Adoptując jednego psa nie zmienisz całego świata, ale&nbsp;zmienisz świat tego psa”.</blockquote> 
                         <p>I&nbsp;to już wystarczająco dużo, aby walczyć o&nbsp;jednego psa, każdego po kolei.</p>
                         <strong>KONTAKT W SPRAWIE ADOPCJI: </strong>
-                        <strong>e-mail: <a href='mailto:agapoli@gmail.com'>fpz@matuzalki.pl</a></strong>
+                        <strong>e-mail: <a href='mailto:fpz@matuzalki.pl'>fpz@matuzalki.pl</a></strong>
                         <strong><a href='tel:+48508071833'>tel.: 519 499 344 (ELA)</a></strong>
                         <button className="home-page__button home-page__button--outstanding">Dowiedz się więcej</button>
                     </div>
