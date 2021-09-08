@@ -43,7 +43,7 @@
         background-size: cover;
         background-repeat: no-repeat;
         @include medium {
-            height: 40vw;
+            height: 50vw;
         }
     }
     &__description {
@@ -80,6 +80,7 @@
 }
 
 .about-us-large {
+    margin: 2rem 0 4rem;
     display: grid;
     grid-template-areas: 
       "head head head head"
@@ -149,7 +150,7 @@
         &--Magda {
             left: 180px;
             bottom: 0px;
-            width: 115px;
+            width: 110px;
             transform: rotate(2deg);
         }
     }
@@ -163,6 +164,6 @@
         width: 130px;
     }
     &__image-item--Magda img {
-        width: 115px;
+        width: 110px;
     }
 }
