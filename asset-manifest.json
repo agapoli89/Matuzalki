@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/Matuzalki/static/css/main.ac6e3a56.chunk.css",
-    "main.js": "/Matuzalki/static/js/main.4ccf5830.chunk.js",
-    "main.js.map": "/Matuzalki/static/js/main.4ccf5830.chunk.js.map",
+    "main.css": "/Matuzalki/static/css/main.9953d62c.chunk.css",
+    "main.js": "/Matuzalki/static/js/main.b4cb794b.chunk.js",
+    "main.js.map": "/Matuzalki/static/js/main.b4cb794b.chunk.js.map",
     "runtime-main.js": "/Matuzalki/static/js/runtime-main.b66fa781.js",
     "runtime-main.js.map": "/Matuzalki/static/js/runtime-main.b66fa781.js.map",
     "static/js/2.aff3dfc2.chunk.js": "/Matuzalki/static/js/2.aff3dfc2.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.3bf7caea.chunk.js": "/Matuzalki/static/js/3.3bf7caea.chunk.js",
     "static/js/3.3bf7caea.chunk.js.map": "/Matuzalki/static/js/3.3bf7caea.chunk.js.map",
     "index.html": "/Matuzalki/index.html",
-    "static/css/main.ac6e3a56.chunk.css.map": "/Matuzalki/static/css/main.ac6e3a56.chunk.css.map",
+    "static/css/main.9953d62c.chunk.css.map": "/Matuzalki/static/css/main.9953d62c.chunk.css.map",
     "static/js/2.aff3dfc2.chunk.js.LICENSE.txt": "/Matuzalki/static/js/2.aff3dfc2.chunk.js.LICENSE.txt",
     "static/media/Asia.328533c2.png": "/Matuzalki/static/media/Asia.328533c2.png",
     "static/media/Basia.3744557b.png": "/Matuzalki/static/media/Basia.3744557b.png",
@@ -29,7 +29,7 @@
   "entrypoints": [
     "static/js/runtime-main.b66fa781.js",
     "static/js/2.aff3dfc2.chunk.js",
-    "static/css/main.ac6e3a56.chunk.css",
-    "static/js/main.4ccf5830.chunk.js"
+    "static/css/main.9953d62c.chunk.css",
+    "static/js/main.b4cb794b.chunk.js"
   ]
 }
