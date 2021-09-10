@@ -2,12 +2,16 @@
 @import '../../style/breakpoints.scss';
 
 .header {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
     padding-top: 2vh;
     width: 100%;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     background-image: linear-gradient(white, $background-main-color);
+    z-index: 5;
     &__logo {
         padding-left: 3vw;
         width: 20vw;

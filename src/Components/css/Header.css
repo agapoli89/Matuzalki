@@ -1,4 +1,8 @@
 .header {
+  position: -webkit-sticky;
+  /* Safari */
+  position: sticky;
+  top: 0;
   padding-top: 2vh;
   width: 100%;
   display: -webkit-box;
@@ -11,6 +15,7 @@
       flex-wrap: wrap;
   background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(#F2F2F2));
   background-image: linear-gradient(white, #F2F2F2);
+  z-index: 5;
 }
 
 .header__logo {

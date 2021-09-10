@@ -29,6 +29,7 @@ const Navigation = () => {
                     <ul className={`submenu ${!isAdoptionMenuOpen && "submenu--invisible"}`}>
                         <li>Adoptuj</li>
                         <li>Adoptuj wirtualnie</li>
+                        <li>Jańcio</li>
                         <li>Nasi Rezydenci</li>
                         <li>Im się udało</li>
                         <li>Po drugiej stronie tęczy</li>
