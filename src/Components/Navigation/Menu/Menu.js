@@ -1,44 +1,53 @@
-import { Link } from "react-router-dom";
-import { IoTriangle } from "react-icons/io5";
-import './Menu.scss';
 import { useState } from "react";
+import { IoTriangle } from "react-icons/io5";
+
+import MenuLink from "./MenuLink";
+import './Menu.scss';
+
 
 const Menu = () => {
     const [isFundationMenuOpen, setIsFundationMenuOpen] = useState(false);
     const [isAdoptionMenuOpen, setIsAdoptionMenuOpen] = useState(false);
     const [isSupportMenuOpen, setIsSupportMenuOpen] = useState(false);
 
-    const toggleFundationMenu = () => setIsFundationMenuOpen(prev => !prev);
-    const toggleAdoptionMenu = () => setIsAdoptionMenuOpen(prev => !prev);
-    const toggleSupportMenu = () => setIsSupportMenuOpen(prev => !prev);
+    const toggleFundationMenu = () => {
+        setIsAdoptionMenuOpen(false);
+        setIsSupportMenuOpen(false);
+        setIsFundationMenuOpen(prev => !prev)
+    };
+    const toggleAdoptionMenu = () => {
+        setIsFundationMenuOpen(false);
+        setIsSupportMenuOpen(false);
+        setIsAdoptionMenuOpen(prev => !prev)
+    };
+    const toggleSupportMenu = () => {
+        setIsFundationMenuOpen(false);
+        setIsAdoptionMenuOpen(false);
+        setIsSupportMenuOpen(prev => !prev)
+    };
+
+    const fundationSubmenu = ["Kilka słów o fundacji", "Członkowie", "Wolontariusze i PSIjaciele", "Sprawozdania"];
+    const adoptionSubmenu = ["Adoptuj", "Adoptuj wirtualnie", "Jańcio", "Nasi Rezydenci", "Im się udało", "Po drugiej stronie tęczy"];
+    const supportSubmenu = ["Jak nam pomóc?", "Oni nas wsparli"];
 
     return (  
         <ul className="menu">
-            <li className="menu__item">
-                <div className="menu__item__text" onClick={toggleFundationMenu}>Fundacja <i className="menu__item__icon menu__item__icon--rotated"><IoTriangle /></i></div>
-                <ul className={`submenu ${!isFundationMenuOpen && "submenu--invisible"}`}>
-                    <li>Kilka słów o fundacji</li>
-                    <li>Członkowie</li>
-                    <li>Wolontariusze i PSIjaciele</li>
-                    <li>Sprawozdania</li>
+            <li className="menu__item" onClick={toggleFundationMenu} >
+                <div className="menu__item__text" >Fundacja <i className={`menu__item__icon  ${!isFundationMenuOpen && "menu__item__icon--rotated"}`}><IoTriangle /></i></div>
+                <ul className={`submenu ${!isFundationMenuOpen && "submenu--invisible"}`} >
+                    {fundationSubmenu.map(fundationSubmenuItem => <MenuLink key={fundationSubmenuItem} text={fundationSubmenuItem} />)}
                 </ul>
             </li>
-            <li className="menu__item">
-                <div className="menu__item__text" onClick={toggleAdoptionMenu}>Nasze psy <i className="menu__item__icon menu__item__icon--rotated"><IoTriangle /></i></div>
+            <li className="menu__item" onClick={toggleAdoptionMenu}>
+                <div className="menu__item__text" >Nasze psy <i className={`menu__item__icon  ${!isAdoptionMenuOpen && "menu__item__icon--rotated"}`}><IoTriangle /></i></div>
                 <ul className={`submenu ${!isAdoptionMenuOpen && "submenu--invisible"}`}>
-                    <li>Adoptuj</li>
-                    <li>Adoptuj wirtualnie</li>
-                    <li>Jańcio</li>
-                    <li>Nasi Rezydenci</li>
-                    <li>Im się udało</li>
-                    <li>Po drugiej stronie tęczy</li>
+                    {adoptionSubmenu.map(adoptionSubmenuItem => <MenuLink key={adoptionSubmenuItem} text={adoptionSubmenuItem} />)}
                 </ul>
             </li>
-            <li className="menu__item">
-                <div className="menu__item__text" onClick={toggleSupportMenu}>Wsparcie <i className="menu__item__icon menu__item__icon--rotated"><IoTriangle /></i></div>
+            <li className="menu__item" onClick={toggleSupportMenu}>
+                <div className="menu__item__text" >Wsparcie <i className={`menu__item__icon  ${!isSupportMenuOpen && "menu__item__icon--rotated"}`}><IoTriangle /></i></div>
                 <ul className={`submenu ${!isSupportMenuOpen && "submenu--invisible"}`}>
-                    <li>Jak nam pomóc?</li>
-                    <li>Oni nas wsparli</li>
+                    {supportSubmenu.map(supportSubmenuItem => <MenuLink key={supportSubmenuItem} text={supportSubmenuItem} />)}
                 </ul>
             </li>
             <li className="menu__item">Kontakt</li>
