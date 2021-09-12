@@ -1,18 +1,15 @@
 @import '../../../style/variables.scss';
 @import '../../../style/breakpoints.scss';
 
-.navigation {
+/* .menu-box {
+    
+} */
+.menu {
     align-self: start;
     width: 100vw;
     color: $logo-color;
     font-weight: 600;
     line-height: 1.7rem;
-    @include medium {
-        width: 70vw;
-        align-self: center;
-    }
-}
-.menu {
     list-style: none;
     font-size: 1.5rem;
     &__item {
@@ -31,6 +28,8 @@
     }
     @include medium {
         padding-left: 0;
+        width: 70vw;
+        align-self: center;
         display: flex;
         justify-content: end;
         &__item {

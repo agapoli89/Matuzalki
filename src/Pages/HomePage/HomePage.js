@@ -1,4 +1,3 @@
-import TitlePage from './TitlePage/TitlePage';
 import { useMediaQuery } from 'react-responsive';
 
 import '../../App.scss';
@@ -20,7 +19,6 @@ const HomePage = () => {
 
     return (  
         <section className="section">
-            <TitlePage />
             <article className={`article ${isLargeView && "about-us-large"}`}>
                 <h3 className="about-us-large__head">O nas</h3>
                 <div className="home-page__text about-us-large__text">Fundacja Pomocy Zwierzętom "Matuzalki" powstała na kanwie wieloletniej działalności Eli i&nbsp;Mirona, celem pomocy zwierzętom domowym, ze&nbsp;szczególnym uwzględnieniem zwierząt w&nbsp;podeszłym wieku. Zaczęło się ćwierć wieku temu, a&nbsp;FPZ Matuzalki jest jedynie kontynuacją wieloletnich poczynań.

@@ -2,39 +2,49 @@
 @import '../../style/breakpoints.scss';
 
 .header {
-    position: -webkit-sticky; /* Safari */
-    position: sticky;
-    top: 0;
-    padding-top: 2vh;
     width: 100%;
+    height: 50vw;
+    background-image: linear-gradient(#F2F2F2, transparent 50%), url('../../images/house.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    flex-wrap: wrap;
-    background-image: linear-gradient(white, $background-main-color);
-    z-index: 5;
-    &__logo {
-        padding-left: 3vw;
-        width: 20vw;
-        height: auto;
-        cursor: pointer;
-        @include medium {
-            width: 10vw;
+    &__title {
+        width: 70vw;
+        font-size: 1rem;
+        margin-left: 2vw;
+        margin-top: 0;
+        padding-top: 5vw;
+        color: $logo-color;
+        font-style: italic;
+        @include before-small {
+            font-size: 1.3rem;
         }
-    } 
-    @include huge {
-        justify-content: center;
+        @include small {
+            width: 50vw;
+        }
+        @include huge {
+            margin-left: 10vw;
+        }
     }
-}
-.hamburger {
-    padding-right: 3vw;
-    background-color: transparent;
-    color: $logo-color;
-    font-size: 15vw;
-    border: none;
-    display: flex;
-    align-items: flex-start;
-    cursor: pointer;
+    &__text {
+        margin-right: 10vw;
+        align-self: flex-end;
+        font-weight: 500;
+        font-style: italic;
+        color: $light-color;
+        background-color: rgba(10, 9, 9, 0.58);
+        font-size: 0.9rem;
+        @include small {
+            font-size: 1.1rem;
+        }
+    }
     @include medium {
-        display: none;
+        height: 40vw;
+    }
+    @include large {
+        height: 35vw;
     }
 }
