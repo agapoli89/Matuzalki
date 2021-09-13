@@ -1,7 +1,10 @@
-const MenuLink = ({text}) => {
-    console.log(text)
+import { Link } from 'react-router-dom';
+
+const MenuLink = ({text, url}) => {
     return (  
-        <li>{text}</li>
+        <li>
+            <Link to={url}>{text}</Link>
+        </li>
     );
 }
  

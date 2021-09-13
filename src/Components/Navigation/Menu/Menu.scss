@@ -25,9 +25,13 @@
                 transform: rotate(180deg);
             }
         }
-        & :hover {
+        &:hover {
             opacity: 0.8;
         }
+    }
+    & a {
+        text-decoration: none;
+        color: $logo-color;
     }
     @include medium {
         padding-left: 0;
@@ -44,6 +48,8 @@
     list-style: none;
     font-size: 1.1rem;
     cursor: pointer;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
     &--invisible {
         display: none;
     }

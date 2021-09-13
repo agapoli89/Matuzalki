@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import Hamburger from './Hamburger';
 import Menu from './Menu/Menu';
 import { useMediaQuery } from 'react-responsive';
@@ -14,9 +15,9 @@ const Navigation = () => {
 
     return (  
       <nav className="navigation">
-        <a>
+        <Link to="/">
           <img src={logo} alt="logo" className="navigation__logo"></img>
-        </a>
+        </Link>
         <Hamburger toggleMenu={toggleMenu}/>
         {isMediumView || isMenuVisible ? <Menu /> : null}
       </nav>
