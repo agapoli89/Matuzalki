@@ -1,9 +1,9 @@
 import { Link } from 'react-router-dom';
 
-const MenuLink = ({text, url}) => {
+const MenuLink = ({text, url, toggleMenu}) => {
     return (  
         <li>
-            <Link to={url}>{text}</Link>
+            <Link to={url} onClick={toggleMenu}>{text}</Link>
         </li>
     );
 }

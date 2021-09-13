@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Hamburger from './Hamburger';
 import Menu from './Menu/Menu';
@@ -5,7 +6,6 @@ import { useMediaQuery } from 'react-responsive';
 
 import logo from './../../images/logo2.png';
 import './Navigation.scss';
-import { useState } from 'react';
 
 const Navigation = () => {
     const [isMenuVisible, setIsMenuVisible] = useState(false);
@@ -19,7 +19,7 @@ const Navigation = () => {
           <img src={logo} alt="logo" className="navigation__logo"></img>
         </Link>
         <Hamburger toggleMenu={toggleMenu}/>
-        {isMediumView || isMenuVisible ? <Menu /> : null}
+        {isMediumView || isMenuVisible ? <Menu toggleMenu={toggleMenu} /> : null}
       </nav>
     );
 }
