@@ -1,4 +1,5 @@
 import { Route, Switch } from "react-router-dom";
+import ScrollToTop from "./helpers/ScrollToTopOnMount";
 import Navigation from './Components/Navigation/Navigation';
 import Header from './Components/Header/Header';
 import HomePage from './Pages/HomePage/HomePage';
@@ -22,6 +23,7 @@ import './App.scss';
 function App() {
   return (
     <div className="App">
+      <ScrollToTop />
       <Navigation />
       <Header />
       <Switch>

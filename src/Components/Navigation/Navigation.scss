@@ -17,10 +17,20 @@
         width: 20vw;
         height: auto;
         cursor: pointer;
-        @include medium {
+        &--scrolled {
             width: 10vw;
         }
+        @include medium {
+            width: 10vw;
+            &--scrolled {
+                width: 6vw;
+            }
+        }
     } 
+    &--scrolled {
+        padding-top: 1vh;
+        margin-bottom: 0;
+    }
     @include huge {
         justify-content: center;
     }
@@ -34,6 +44,9 @@
     display: flex;
     align-items: flex-start;
     cursor: pointer;
+    &--scrolled {
+        font-size: 10vw;
+    }
     @include medium {
         display: none;
     }

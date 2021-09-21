@@ -7,7 +7,7 @@ import { menuData } from "./MenuData.js";
 import './Menu.scss';
 
 
-const Menu = ({toggleMenu}) => {
+const Menu = ({toggleMenu, isTopOfThePage}) => {
     const [isFundationMenuOpen, setIsFundationMenuOpen] = useState(false);
     const [isAdoptionMenuOpen, setIsAdoptionMenuOpen] = useState(false);
     const [isSupportMenuOpen, setIsSupportMenuOpen] = useState(false);
@@ -29,7 +29,7 @@ const Menu = ({toggleMenu}) => {
     };
 
     return (  
-        <ul className="menu">
+        <ul className={`menu ${!isTopOfThePage && "menu--scrolled"}`}>
             <li className="menu__item" onClick={toggleFundationMenu} >
                 <div className="menu__item__text" >Fundacja <i className={`menu__item__icon  ${!isFundationMenuOpen && "menu__item__icon--rotated"}`}><IoTriangle /></i></div>
                 <ul className={`submenu ${!isFundationMenuOpen && "submenu--invisible"}`} >
