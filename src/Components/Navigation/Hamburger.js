@@ -1,8 +1,8 @@
 import {IoMenu} from "react-icons/io5";
 
-const Hamburger = ({toggleMenu}) => {
+const Hamburger = ({toggleMenu, isTopOfThePage}) => {
     return (  
-        <button className="hamburger" onClick={toggleMenu}><IoMenu /></button>
+        <button className={`hamburger ${!isTopOfThePage && "hamburger--scrolled"}`} onClick={toggleMenu}><IoMenu /></button>
     );
 }
  
