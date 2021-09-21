@@ -44,6 +44,9 @@
     background-color: $logo-color;
     color: $light-color;
   }
+  &--justify {
+    text-align: justify;
+  }
   @include small {
     width: 80vw;
     &--outstanding {
@@ -54,6 +57,9 @@
     width: 70vw;
     &--outstanding {
       width: 100%;
+    }
+    &--medium {
+      width: 90vw;
     }
   }
   @include large {

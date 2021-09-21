@@ -1,0 +1,104 @@
+@import '../../style/variables.scss';
+@import '../../style/breakpoints.scss';
+
+//layout inspiration from: http://bestjquery.com/tutorial/our-team/demo72/;
+.members-box {
+    @include medium {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-bottom: 2rem;
+    }
+}
+.member {
+    margin: 2rem 0;
+    text-align: center;
+    position: relative;
+    &__contact {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        position: absolute;
+        top: 50px;
+        left: 20px;
+        transition: all 0.3s ease-out 0s;
+        &__item {
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+            border-radius: 50%;
+            background: $logo-color;
+            font-size: 14px;
+            color: $background-main-color;
+            text-align: center;
+            margin-bottom: 5px;
+            transform: scale(0);
+            transition: all 0.2s ease 0s;
+            & a {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+    &:hover .member__contact__item{
+        transform: scale(1);
+    }
+    &__info {
+        padding: 15px 15px 20px;
+        background: $logo-color;
+        border-radius: 40px 10px;
+        margin-top: -20px;
+        color: $background-main-color;
+        &__name {
+            font-size: 1.8rem;
+            font-weight: bold;
+            margin: 10px 0 5px 0;
+        }
+        &__position {
+            display: block;
+            font-size: 0.8rem;
+            font-weight: 900;
+            text-transform: uppercase;
+        }
+    }
+    &__description {
+        padding: 20px;
+        background: #fff;
+        border-radius: 20px;
+        font-size: 16px;
+        color: $main-text-color;
+        line-height: 30px;
+        margin: 0 0;
+        text-align: justify;
+    }
+    &__picture {
+        width: 200px;
+        height: 200px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        border-radius: 50%;
+        border: 8px solid $logo-color;
+        background-color: $logo-color;
+        overflow: hidden;
+        & img {
+            width: 100%;
+            height: auto;
+        }
+    }
+    @include medium {
+        width: 49%;
+    }
+    @include large {
+        width: 32%;
+        &__info {
+            &__name {
+                font-size: 1.6rem;
+            }
+            &__position {
+                font-size: 0.7rem;
+            }
+        }
+    }
+}
