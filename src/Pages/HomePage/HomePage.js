@@ -4,15 +4,15 @@ import { Link } from 'react-router-dom';
 import '../../App.scss';
 import './HomePage.scss';
 
-import Miron from '../../images/Miron.png';
-import Basia from '../../images/Basia.png';
-import Ela from '../../images/Ela.png';
-import Joasia from '../../images/Joasia.png';
-import Asia from '../../images/Asia.png';
-import Magda from '../../images/Magda.png';
-import Bronek from '../../images/Dogs/Bronek.png';
-import Donek from '../../images/Dogs/Donek.png';
-import Ignas from '../../images/Dogs/Ignas.png';
+import Miron from '../../images/people/Miron.png';
+import Basia from '../../images/people/Basia.png';
+import Ela from '../../images/people/Ela.png';
+import Joasia from '../../images/people/Joasia.png';
+import Asia from '../../images/people/Asia.png';
+import Magda from '../../images/people/Magda.png';
+import Bronek from '../../images/dogs/Bronek.png';
+import Donek from '../../images/dogs/Donek.png';
+import Ignas from '../../images/dogs/Ignas.png';
 import KRS from '../../images/krs.png';
 
 const HomePage = () => {
