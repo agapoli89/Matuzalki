@@ -1,0 +1,26 @@
+@import '../../style/variables.scss';
+
+.button {
+    padding: 0.6rem;
+    background-color: $logo-color;
+    color: $light-color;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    align-self: flex-end;
+    cursor: pointer;
+    &--outstanding {
+        margin: 0.5rem 1.5rem 1.5rem;
+        background-color: $light-color;
+        color: $logo-color;
+    }
+    &--center {
+        align-self: center;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: $light-color;
+}
