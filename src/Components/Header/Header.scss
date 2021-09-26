@@ -11,13 +11,18 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    color: $logo-color;
+    &--for-support {
+        background-image: linear-gradient(#F2F2F2, transparent 20%), url('../../images/support/thankyou.jpg');
+        color: $background-main-color;
+    }
     &__title {
         width: 70vw;
         font-size: 1rem;
         margin-left: 2vw;
         margin-top: 0;
         padding-top: 5vw;
-        color: $logo-color;
+        
         font-style: italic;
         @include before-small {
             font-size: 1.3rem;
