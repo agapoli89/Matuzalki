@@ -27,7 +27,7 @@ const VolonteersAndFriends = () => {
                         <h3 className="member__info__name">Eliza Polkowska-Matejko</h3>
                         <span className="member__info__position">Nasza Opiekunka Behawioralna</span>   
                     </div>
-                    <p className="member__description">Założycielka i instrukrorka szkolenia psów w Positive Dog.</p>
+                    <p className="member__description">Założycielka i instruktorka szkolenia psów w Positive Dog.</p>
                 </section>
             </div>
         </main>
