@@ -1,0 +1,12 @@
+.support {
+    &__subtitle {
+        margin-bottom: 0;
+    }
+    &__krs {
+        display: flex;
+        flex-direction: column;
+        &__image {
+            align-self: center;
+        }
+    }
+}
