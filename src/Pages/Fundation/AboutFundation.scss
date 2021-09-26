@@ -1,8 +1,20 @@
+@import '../../style/breakpoints.scss';
+
 .about-fundation {
     &__post-scriptum {
         font-style: italic;
     }
     &__subheader {
         margin-bottom: 0;
+    }
+    &__link-text {
+        color: black;
+        font-size: 1rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        text-align: center;
+        @include medium {
+            font-size: 1.1rem;
+        }
     }
 }
