@@ -12,9 +12,12 @@
     flex-direction: column;
     justify-content: space-between;
     color: $logo-color;
-    &--for-support {
+    &--support {
         background-image: linear-gradient(#F2F2F2, transparent 20%), url('../../images/support/thankyou.jpg');
         color: $background-main-color;
+    }
+    &--jancio {
+        background-image: linear-gradient(#F2F2F2, transparent 20%), url('../../images/dogs/Jancio.png');
     }
     &__title {
         width: 70vw;
