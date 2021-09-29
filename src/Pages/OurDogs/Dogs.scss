@@ -1,0 +1,41 @@
+@import '../../style/variables.scss';
+
+.dogs-box {
+    margin: 2rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    & a {
+        text-decoration: none;
+        color: $main-text-color;
+    }
+}
+
+.dog {
+    margin: 1rem;
+    padding: 0.5rem 0;
+    width: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: solid 0.2rem grey;
+    border-radius: 5px;
+    box-sizing: border-box;
+    &__picture {
+        max-width: 95%;
+        height: 250px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        border-radius: 5px;
+        & img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+    }
+    &__text {
+        font-weight: 500;
+    }
+}
