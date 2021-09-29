@@ -15,6 +15,7 @@ import OurResidents from './Pages/OurDogs/OurResidents';
 import TheyFoundHome from './Pages/OurDogs/TheyFoundHome';
 import TheyHelpedUs from './Pages/Support/TheyHelpedUs';
 import HowToHelpUs from './Pages/Support/HowToHelpUs';
+import Dog from './Pages/OurDogs/Dog';
 import Contact from './Pages/Contact/Contact';
 import Footer from './Components/Footer/Footer';
 
@@ -65,6 +66,9 @@ function App() {
         </Route>
         <Route path={`/kontakt`}>
           <Contact />
+        </Route>
+        <Route path="/:url">
+          <Dog />
         </Route>
         <Route path="/">
           <HomePage />
