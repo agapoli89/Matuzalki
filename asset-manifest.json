@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Matuzalki/static/css/main.c62654f2.chunk.css",
-    "main.js": "/Matuzalki/static/js/main.f84774da.chunk.js",
-    "main.js.map": "/Matuzalki/static/js/main.f84774da.chunk.js.map",
+    "main.js": "/Matuzalki/static/js/main.39b8a851.chunk.js",
+    "main.js.map": "/Matuzalki/static/js/main.39b8a851.chunk.js.map",
     "runtime-main.js": "/Matuzalki/static/js/runtime-main.0cdeffce.js",
     "runtime-main.js.map": "/Matuzalki/static/js/runtime-main.0cdeffce.js.map",
     "static/css/2.ab18fb39.chunk.css": "/Matuzalki/static/css/2.ab18fb39.chunk.css",
@@ -62,6 +62,6 @@
     "static/css/2.ab18fb39.chunk.css",
     "static/js/2.9895d980.chunk.js",
     "static/css/main.c62654f2.chunk.css",
-    "static/js/main.f84774da.chunk.js"
+    "static/js/main.39b8a851.chunk.js"
   ]
 }
