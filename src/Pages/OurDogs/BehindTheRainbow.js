@@ -15,35 +15,34 @@ import './Dogs.scss';
 
 const BehindTheRainbow = () => {
 
-    const dogsBehindTheRainbow = dogs.filter(({dogStatus}) => dogStatus === "behindTheRainbow");
-
     const imgToDisplay = (url) => {
         switch (url) {
-            case "/manius":
+            case "manius":
                 return manius;
-            case "/maksio":
+            case "maksio":
                 return maksio;
-            case "/sylwek":
+            case "sylwek":
                 return sylwek;
-            case "/ignas":
+            case "ignas":
                 return ignas;
-            case "/misiek":
+            case "misiek":
                 return misiek;
-            case "/wicia":
+            case "wicia":
                 return wicia;
-            case "/diana":
+            case "diana":
                 return diana;
-            case "/pluto":
+            case "pluto":
                 return pluto;
-            case "/piotrus":
+            case "piotrus":
                 return piotrus;
             default:
                 return maksio;
         }
     }
-
+    
+    const dogsBehindTheRainbow = dogs.filter(({dogStatus}) => dogStatus === "behindTheRainbow");
     const dogsToDisplay = dogsBehindTheRainbow.map(({id, dogName, url})=> (
-        <Link key={id} to={`${url}`} className="dog">
+        <Link key={id} to={`psy/${url}`} className="dog">
             <div className="dog__picture"><img src={imgToDisplay(url)} alt={dogName} /></div>
             <p className="dog__text">{dogName}</p>
         </Link>
