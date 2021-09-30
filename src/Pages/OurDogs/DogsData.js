@@ -2,7 +2,7 @@ export const dogs = [
     {
         id: 1,
         dogName: "Maniuś",
-        url: "/manius",
+        url: "manius",
         dogStatus: "behindTheRainbow",
         par1: "Stary jak świat owczarek niemiecki, kiedyś pewnie majestatyczny, budzący respekt. Gdy się zestarzał i zachorował wyrzucili go na zbity pysk. W momencie przyjęcia do Ośrodka był skrajnie zagłodzony, nie był w stanie utrzymać się na nogach. Wstępnie postawiliśmy go na nogi. Wstawał, dreptał sobie powolutku i merdał do nas swoim wielkim ogonem.",
         par2: "Przeżył u nas niespełna dwa miesiące. Jego serce nie miało już siły utrzymać organizmu przy życiu. Zasnął w nocy ...w ciszy i spokoju w czerwcu 2016 roku. DO ZOBACZENIA MANIUŚ!",
@@ -10,23 +10,24 @@ export const dogs = [
     {
         id: 2,
         dogName: "Maksio",
-        url: "/maksio",
+        url: "maksio",
         dogStatus: "behindTheRainbow",
         par1: "Maksio miał 17 lat... był ślepy i głuchy... żył trochę z boku ...nie lubił towarzystwa, dotyku, głaskania i przytulania. Wolał spokojne, ustabilizowane wręcz monotonne życie w samotności. Najlepiej czuł się kiedy każdy dzień był taki sam. Miał swoją ulubioną budę, uwielbiał gotowane jedzonko i miał jednego przyjaciela ...starego onka- Sylwcia, z którym dzielił boks. Kochaliśmy go (nadal kochamy) za ten jego spokój i dbałość o to, aby nikomu nie przeszkadzać i nie stwarzać swoją osobą kłopotu.",
         par2: "Maksio odszedł od nas w lipcu 2016 roku. Pa MAKSIOLKU... do zobaczenia :(.",
         link: "https://www.facebook.com/matuzalki/videos/1765006847114274/",
+        linkInfo: "Tak pożegnaliśmy Maksia..."
     },
     {
         id: 3,
         dogName: "Sylwuś",
-        url: "/sylwek",
+        url: "sylwek",
         dogStatus: "behindTheRainbow",
         par1: "Pies w typie owczarka niemieckiego. Trafił do nas już stary, ślepy, z problemami ze stawami. Z biegiem czasu zestarzał się jeszcze bardziej. Nie widział już nic, miał problemy z poruszaniem się, ale miał w sobie wielką radość i wolę życia. Cieszymy się, że chociaż na koniec życia mogliśmy go kochać, głaskać, karmić, a on cieszył się i merdał do nas swoim wielkim ogonem. Do zobaczenia!"
     },
     {
         id: 4,
         dogName: "Ignaś",
-        url: "/ignas",
+        url: "ignas",
         dogStatus: "behindTheRainbow",
         par1: "Znaleziony na polu, nie miał dobrego życia. Przez ten krótki czas, jaki u nas mieszkał, staraliśmy się dać mu wszystko to czego nie miał. Dom, pełną miskę i dużo miłości. Ignaś przestał wstawać, jeść, widać było że cierpi.",
         par2: "Odszedł spokojnie w styczniu 2017 roku. Żegnaj przyjacielu!",
@@ -34,7 +35,7 @@ export const dogs = [
     {
         id: 5,
         dogName: "Misiek",
-        url: "/misiek",
+        url: "misiek",
         dogStatus: "behindTheRainbow",
         par1: "Schizofrenik i paranoik. Odebrany interwencyjnie z patologicznego domu w Brzezimierzu. Był tam notorycznie bity i głodzony. Niestety, trwale pozostało to w jego psychice. Świetnie odnalazł się w Ośrodku, ale czasami wracała trauma i potrafił być nie do zniesienia - pies nieadopcyjny i musiał pozostać z nami do końca.",
         par2: "Odszedł od nas w styczniu 2017 roku. Do zobaczenia!",
@@ -42,7 +43,7 @@ export const dogs = [
     {
         id: 6,
         dogName: "Wicia",
-        url: "/wicia",
+        url: "wicia",
         dogStatus: "behindTheRainbow",
         par1: "Nasza jedyna kotka. Zabrana ze schronu na Skarbowców. Ponad rok trwało jej oswajanie po tym jak ktoś połamał jej miednicę i urwał kawałek ogona. Na początku była kotem 'vidmo' bo o jej obecności świadczyło tylko znikające jedzenie. Po paru miesiącach pojawiła się na stałe w szopie gdzie dawała się nawet delikatnie pogłaskać. Kolejnym etapem był parapet kuchennego okna, z którego cichcem obserwowała wnętrze domu. Po pewnym czasie przełamała się i zamieszkała w domu. Od tamtej pory ciężko ją było z niego wyrzucić, choćby na parę minut.",
         par2: "Przeżyła 14 lat z czego 12 z nami. Do zobaczenia nasza sypialniana koto",
@@ -50,7 +51,7 @@ export const dogs = [
     {
         id: 7,
         dogName: "Diana",
-        url: "/diana",
+        url: "diana",
         dogStatus: "behindTheRainbow",
         par1: "+16 lat. Przez całe swoje życie stróżowała w jednej z katowickich firm przemysłowych. Niestety, zmienił się system ochrony na elektroniczny i Diana nie mogła zostać na terenie firmy. Dzięki członkom zarządu i pracownikom nie trafiła na starość do schroniska lecz do nas :) . Babcia pilnowanie miała we krwi, więc i w Matuzalkowie dzielnie dozorowała sforę i caly teren",
         par2: "Do zobaczenia!",
@@ -58,7 +59,7 @@ export const dogs = [
     {
         id: 8,
         dogName: "Pluto",
-        url: "/pluto",
+        url: "pluto",
         dogStatus: "behindTheRainbow",
         par1: "Pluto trafił do nas jako głuchy, ślepy staruszek. Osiemnaście lat dyndał na łańcuchu, przy budzie. Pewnego dnia, wg relacji właścicielki, zerwał się z łańcucha i „poszedł jak przecinak” (na pewno 18-letni głuchy i ślepy pies wyszarpał się z łańcucha i poszedł w siną dal...). W taki oto sposób Pluto znalazł się w Przytulisku pod Wieluniem, gdzie go wypatrzyliśmy i zabraliśmy... do domu. Mimo, że poznaliśmy go jak miał już wiele lat na karku, zapamiętamy go jako psa o ogromnej woli i radości życia. Cieszył się jak się go głaskało, a na widok jedzenia ogon chciał mu odpaść :).",
         par2: "Pluto miał zapewnione miejsce na naszej kanapie do ostatniego swojego dnia. Odszedł we wrześniu 2018 roku. Żegnaj przyjacielu!",
@@ -66,9 +67,30 @@ export const dogs = [
     {
         id: 9,
         dogName: "Piotruś",
-        url: "/piotrus",
+        url: "piotrus",
         dogStatus: "behindTheRainbow",
         par1: "Pinczer z krwi i kości. Piotruś, jak na każdego szanującego się przedstawiciela rasy przystało, mimo filigranowego wyglądu był wielki charakterem, potrafił czasem pokazać różki, a jakże. Uwielbiał być głaskany, ale tylko z jednej strony. Dlaczego? Bo tak sobie życzył ;). Podejść do niego też można było tylko z jednej strony (na przykład by go podnieść, celem noszenia na rączkach :)). Dlaczego? Bo tak sobie życzył! ",
         par2: "Piotruś był przesłodnkim pieskiem, ze słodko-goszkim charakterkiem. Tęskinimy!",
+    },
+    {
+        id: 10,
+        dogName: "Stella",
+        url: "stella",
+        dogStatus: "toAdopt",
+        par1: "Stella 3 stycznia 2017 roku pod Warszawą została potrącona przez samochód. Złamany kręgosłup w dwóch miejscach, paraliż od psa w dół. Suczka porusza się na wózku, musi chodzić w pieluszkach.  Stella jest urocza, wesoła, pełna życia.  Kocha ludzi i inne zwierzęta i nijak nie odczuwa swojego kalectwa.",
+        par2: "Wiemy że znalezienie dla niej odpowiedniego opiekuna, który poświęci się przez kolejne kilkanaście lat graniczy z cudem, ale nie poddajemy sie. Może ktoś bedzie w stanie jej pomóc.",
+        strongInfo: "Wszelkie info pod numerem tel.: 518 75 66 65 - MIRON",
+        link: "https://www.fakt.pl/wydarzenia/polska/wroclaw/stella-ciagle-sie-nie-poddaje-i-walczy-by-zyc/hx0m514",
+        linkInfo: "Historia Stelli opisana w Fakcie",
+        link2: "https://www.youtube.com/watch?v=2rUKj22m3P4",
+        linkInfo2: "Pierwszy spacerek Stelli :)",
+        isGallery: true,
+    },
+    {
+        id: 11,
+        dogName: "Donek",
+        url: "donek",
+        dogStatus: "toAdoptVirtually",
+        par1: "Ur. ok. 2000 roku, rezydent, mała parówka o krowiastym umaszczeniu. Niedowidzący dziadeczek z alergią skórną. Jego największą pasją jest leżenie na kanapie, jedzenie i „donkowe joggingi” czytaj leżenie na trawie. Z racji wieku nie ma szans na adopcję, pozostanie w Ośrodku do końca.",
     },
 ]
