@@ -1,0 +1,13 @@
+@import '../../style/variables.scss';
+@import '../../style/breakpoints.scss';
+
+.adoption {
+    & a {
+        color: $logo-color;
+        font-weight: 600;
+        font-size: 1.3rem;
+    }
+    & h4 {
+        margin-bottom: 0;
+    }
+}
