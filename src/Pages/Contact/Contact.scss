@@ -1,0 +1,67 @@
+@import '../../style/variables.scss';
+@import '../../style/breakpoints.scss';
+
+.contact {
+    &__data {
+        grid-area: contact-data;
+        &__address {
+            display: flex;
+            flex-direction: column;
+            font-weight: 600;
+            &__title {
+                font-weight: 500;
+                text-decoration: underline;
+            }
+        }
+    }
+    &__members {
+        grid-area: contact-members;
+    }
+    &__map {
+        grid-area: contact-map;
+        border: none;
+    }
+    &__member {
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        padding-bottom: 0.5rem;
+        border-bottom: solid 1px $main-text-color;
+        & p {
+            margin-bottom: 0;
+            font-weight: 600;
+        }
+    }
+    a {
+        text-decoration: none;
+        color: $main-text-color;
+    }
+    strong {
+        color: red;
+    }
+    @include medium {
+        width: 90%;
+        display: grid;
+        grid-template-areas:
+            "title title"
+            "contact-data contact-members"
+            "contact-support contact-support"
+            "contact-map contact-map";
+        grid-template-rows: auto;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 4rem;
+        &__title {
+            grid-area: title;
+        }
+        &__support {
+            grid-area: contact-support;
+            text-align: center;
+        }
+    }
+    @include large {
+        width: 80%;
+    }
+    @include extra-large {
+        column-gap: 1rem;
+    }
+} 
