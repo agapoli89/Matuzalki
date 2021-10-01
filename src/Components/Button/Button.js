@@ -1,9 +1,9 @@
 import { Link } from 'react-router-dom';
 import './Button.scss';
 
-const Button = ({ text, link, addClass, handleClick }) => {
+const Button = ({ text, link, addClass, addClass2, handleClick }) => {
     return (  
-        <button className={`button button--${addClass}`} onClick={handleClick}>
+        <button className={`button button--${addClass} button--${addClass2}`} onClick={handleClick}>
             {link ? <Link to={link}>{text}</Link> : text}
         </button>
     );
