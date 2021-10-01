@@ -93,4 +93,59 @@ export const dogs = [
         dogStatus: "toAdoptVirtually",
         par1: "Ur. ok. 2000 roku, rezydent, mała parówka o krowiastym umaszczeniu. Niedowidzący dziadeczek z alergią skórną. Jego największą pasją jest leżenie na kanapie, jedzenie i „donkowe joggingi” czytaj leżenie na trawie. Z racji wieku nie ma szans na adopcję, pozostanie w Ośrodku do końca.",
     },
+    {
+        id: 12,
+        dogName: "Liza",
+        url: "liza",
+        dogStatus: "withHome",
+        par1: "Młoda, idealna figura, dobre proporcje, inteligencja na najwyższym poziomie. Liza bez trudu mogłaby ubiegać się o koronę Miss Owczar-World.",
+    },
+    {
+        id: 13,
+        dogName: "Witek",
+        url: "witek",
+        dogStatus: "withHome",
+        par1: "Osiem pokoleń temu był terrierem, teraz jest …hmm… terierem niskopiennym dolnośląskim? ;)",
+        par2: "Witek, 3+ jest cudownym kundelkiem, takie jakie my (ekipa Fundacja Matuzalki) lubimy najbardziej: spokojny, miły, nie ma w nim krzty aferzysty, posłuszny. Idealny! Szukasz spokojnego przyjaciela, który będzie towarzyszył Ci w każdym aspekcie życia? Witek  czeka na Twoje zainteresowanie."
+    },
+    {
+        id: 14,
+        dogName: "Zuzia",
+        url: "zuzia",
+        dogStatus: "withHome",
+        par1: "Zuzia jest bardzo wrażliwym pieskiem, po ciężkich przejściach na nowo uczy się życia, idzie jej świetnie!",
+        par2: "Jest bardzo pojętna, bardzo chce być grzeczna. Jest przemiłym, maleńkim pieskiem (5kg)."
+    },
+    {
+        id: 15,
+        dogName: "Aduś",
+        url: "adus",
+        dogStatus: "withHome",
+        par1: "Butapren, nazwa handlowa kleju rozpuszczalnikowego, charakterystyka produktu: klej ten stosuje się głównie przy łączeniu gumy, skóry naturalnej i sztucznej, tkanin sztucznych i naturalnych oraz filcu. Co wspólnego ma butapren z mikro pieskiem, który szukał domu?",
+        par2: "O dziwo bardzo wiele! Aduś, 3+, jest pieskiem spokojnym, delikatnym, grzecznym i bardzo uczuciowym. Najchętniej całymi dniami przytulałby się do swojego Pana. Jest jak przyklejony na butapren. Ciężko go odlepić. No bo i po co odlepiać, skoro to taka przyjemnie dla obu stron?"
+    },
+    {
+        id: 16,
+        dogName: "Klara",
+        url: "klara",
+        dogStatus: "withHome",
+        par1: "Urocza suczka o ponadprzeciętnym temperamencie.",
+        par2: "Kocha ludzi , kocha dzieci, kocha inne zwierzęta ....ona wszystko bardzo kocha!"
+    },
+    {
+        id: 17,
+        dogName: "Tobiasz",
+        url: "tobiasz",
+        dogStatus: "withHome",
+        par1: "Pysk ni to owczarek, ni to mops. Nie wiadomo co. Czarny, podpalany, najzwyklejszy na świecie.",
+        par2: "ALE! Ale radość z każdego dnia spędzonego w normalnych (godnych) warunkach jest u niego tak wielka, że nie da się tego opisać słowami. Szaleje, biega, chce się bawić, bardzo chce być głaskany, rozdaje buziaczki!"
+    },
+    {
+        id: 18,
+        dogName: "Atos",
+        url: "atos",
+        dogStatus: "withHome",
+        par1: "Z wyglądu niepozorny, skromny, a przy tym genialny sportowiec. Niesamowicie skoczny, chętny do biegania, zabaw, wszystkiego co jest związane z ruchem. Rośnie nam mistrz, ale jak każdy „podlotek” potrzebuje trochę szlifu. Stąd, genialny sportowiec poszukuje trenera!",
+        par2: "Atos zgadza się z innymi psami, wręcz do nich lgnie. Kocha ludzi i dzieci, jest bardzo całuśny, trochę szalony. Piesek jest bardzo aktywny, musi sobie poskakać i pobiegać. Jak na mistrza przystało najpewniej będzie postacią nietuzinkową..."
+    },
 ]

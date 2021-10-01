@@ -18,6 +18,13 @@ import pluto from '../../images/dogs/behindTheRainbow/pluto.jpg';
 import piotrus from '../../images/dogs/behindTheRainbow/piotrus.jpg';
 import stella from '../../images/dogs/toAdopt/stella.jpg';
 import donek from '../../images/dogs/toAdoptVirtually/donek.jpg';
+import liza from '../../images/dogs/theyFoundHome/liza.jpg';
+import witek from '../../images/dogs/theyFoundHome/witek.jpg';
+import zuzia from '../../images/dogs/theyFoundHome/zuzia.jpg';
+import adus from '../../images/dogs/theyFoundHome/adus.jpg';
+import klara from '../../images/dogs/theyFoundHome/klara.jpg';
+import tobiasz from '../../images/dogs/theyFoundHome/tobiasz.jpg';
+import atos from '../../images/dogs/theyFoundHome/atos.jpg';
 
 import stella1 from '../../images/dogs/toGallery/stella1.png';
 import stella2 from '../../images/dogs/toGallery/stella2.jpg';
@@ -54,6 +61,20 @@ const Dog = () => {
                 return stella;
             case "donek":
                 return donek;
+            case "liza":
+                return liza;
+            case "witek":
+                return witek;
+            case "zuzia":
+                return zuzia;
+            case "adus":
+                return adus;
+            case "klara":
+                return klara;
+            case "tobiasz":
+                return tobiasz;
+            case "atos":
+                return atos;
             default:
                 return maksio;
         }
@@ -92,13 +113,18 @@ const Dog = () => {
                     {isGallery && <Button text={"Zobacz więcej zdjęć"} handleClick={handleIsGalleryOpen} addClass={"center"}/>}
                     {isGalleryOpen && <Gallery handleIsGalleryOpen={handleIsGalleryOpen} images={toGallery(url).img} captions={toGallery(url).caption}/>}
                 </div>
-                    <div className="dog-page__img-box"><img src={imgToDisplay(url)} alt={dogName}/></div>
+                <div className="dog-page__img-box"><img src={imgToDisplay(url)} alt={dogName}/>
                 </div>
-                <div className="dog-page__buttons-box">
-                    {(dogStatus === "toAdopt" || dogStatus === "toAdoptVirtually") && <PopupBox text="Adoptuj wirtualnie" dogName={dogName}/>}
-                    {dogStatus === "toAdopt" && <PopupBox text="Adoptuj" dogName={dogName}/>}
-                    <Button text="Wróć do pozostałych piesków" handleClick={handleGoBack}/>
-                </div>
+                {dogStatus === "withHome" && <div className="mission-completed">
+                    <span>Misja: Nowy dom -</span>
+                    <strong>WYKONANA!</strong>
+                </div>}
+            </div>
+            <div className="dog-page__buttons-box">
+                {(dogStatus === "toAdopt" || dogStatus === "toAdoptVirtually") && <PopupBox text="Adoptuj wirtualnie" dogName={dogName}/>}
+                {dogStatus === "toAdopt" && <PopupBox text="Adoptuj" dogName={dogName}/>}
+                <Button text="Wróć do pozostałych piesków" handleClick={handleGoBack}/>
+            </div>
         </main>
     );
 }
