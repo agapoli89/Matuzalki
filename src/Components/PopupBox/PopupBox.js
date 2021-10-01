@@ -24,6 +24,7 @@ const PopupBox = ({text, dogName}) => {
         <Popup
             trigger={<button className="button"> {text} </button>}
             modal
+            lockScroll
         >
             {close => (
                 <div className="modal">
