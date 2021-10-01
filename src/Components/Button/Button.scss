@@ -10,17 +10,20 @@
     border-radius: 5px;
     align-self: flex-end;
     cursor: pointer;
+    a {
+        text-decoration: none;
+        color: $light-color;
+    }
     &--outstanding {
         margin: 0.5rem 1.5rem 1.5rem;
         background-color: $light-color;
         color: $logo-color;
+        a {
+            color: $logo-color;
+        }
     }
     &--center {
         align-self: center;
     }
 }
 
-a {
-    text-decoration: none;
-    color: $light-color;
-}

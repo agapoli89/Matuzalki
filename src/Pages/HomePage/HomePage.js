@@ -1,5 +1,5 @@
 import { useMediaQuery } from 'react-responsive';
-import { Link } from 'react-router-dom';
+import Button from '../../Components/Button/Button';
 
 import '../../App.scss';
 import './HomePage.scss';
@@ -26,7 +26,7 @@ const HomePage = () => {
                     <h5>Co się zmieniło?</h5>
                     Absolutnie nic! Nadal będziemy robić co w&nbsp;naszej mocy, aby pomóc tym starym, chorym i&nbsp;niechcianym, ale bez Waszej pomocy nie damy rady i&nbsp;będziemy skazani na porażkę... Stąd, mamy wielką nadzieję, że w&nbsp;miarę swoich możliwości będziecie nas wspierać, tak jak dotychczas :).
                     <h5>Ale od początku. Jak to się zaczęło...</h5>
-                    <button className="home-page__button about-us-large__button"><Link to="/o-fundacji">...poznaj nas bliżej</Link></button>
+                    <Button text="...poznaj nas bliżej" link="/o-fundacji"/>
                 </div>
                 
                 {isLargeView && <div className="about-us-large__image-box">
@@ -54,7 +54,7 @@ const HomePage = () => {
                         <strong>KONTAKT W SPRAWIE ADOPCJI: </strong>
                         <strong>e-mail: <a href='mailto:fpz@matuzalki.pl'>fpz@matuzalki.pl</a></strong>
                         <strong><a href='tel:+48519499344'>tel.: 519 499 344 (ELA)</a></strong>
-                        <button className="home-page__button home-page__button--outstanding">Dowiedz się więcej</button>
+                        <Button text="Dowiedz się więcej" addClass="outstanding" link="/adoptuj"/>
                     </div>
                 </div>
             </article>

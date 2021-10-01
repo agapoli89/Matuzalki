@@ -1,4 +1,5 @@
 @import '../../style/variables.scss';
+@import '../../style/breakpoints.scss';
 
 .dogs-box {
     margin: 2rem 0;
@@ -37,5 +38,26 @@
     }
     &__text {
         font-weight: 500;
+    }
+    &--to-adopt {
+        border-color: $logo-color;
+    }
+}
+
+.they-found-home {
+    text-align: center;
+    &__dog-history {
+        text-align: justify;
+    }
+    @include small {
+        &__dog-image{
+            float: left;
+            margin-right: 1rem;
+            &--right {
+                float: right;
+                margin-right: 0;
+                margin-left: 1rem;
+            }
+        }
     }
 }

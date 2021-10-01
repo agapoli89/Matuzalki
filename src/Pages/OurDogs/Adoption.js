@@ -52,7 +52,7 @@ const Adoption = () => {
             <div className="dogs-box">
                 {dogsToDisplay}
             </div>
-            <Button text="Jeżeli marzysz o psiaku, ale obecnie nie masz możliwość pełnoetatowej opieki, rozważ adopcję wirtualną" addClass="outstanding" link="/adoptuj-wirtualnie"/>
+            <Button text="Jeżeli marzysz o psiaku, ale obecnie nie masz możliwość pełnoetatowej opieki, rozważ adopcję wirtualną" addClass="outstanding" addClass2="center" link="/adoptuj-wirtualnie"/>
         </main>
     );
 }

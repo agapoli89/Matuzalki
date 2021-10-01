@@ -22,9 +22,9 @@
         &--support {
             display: block;
         }
-        & a {
-            text-decoration: none;
+        & strong a {
             color: $light-color;
+            text-decoration: none;
         }
     }
     &__button {
@@ -37,11 +37,6 @@
         border-radius: 5px;
         align-self: flex-end;
         cursor: pointer;
-        &--outstanding {
-            margin: 0.5rem 1.5rem 1.5rem;
-            background-color: $light-color;
-            color: $logo-color;
-        }
     }
     &__adoption {
         margin: 0;
@@ -106,7 +101,9 @@
         flex-wrap: wrap;
         align-items: center;
         background-color: $light-color;
+        & a {text-decoration: none;}
     }
+    
 }
 
 .polaroid {
@@ -244,6 +241,11 @@
     }
     &__image {
         grid-area: image-box;
+        &--small {
+            @include large {
+                width: 60%;
+            }
+        }
         & img {
             width: 100%;
         }

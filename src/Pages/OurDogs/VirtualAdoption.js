@@ -28,7 +28,7 @@ const VirtualAdoption = () => {
 
     return (  
         <main className="article article--justify adoption">
-            <h2>Adoptuj wirtualnie i daj wiarę w lepsze jutro !</h2>
+            <h2>Adoptuj wirtualnie i daj wiarę w lepsze jutro!</h2>
             <p>Adopcja wirtualna nie wymaga wielkiego wysiłku. Polega na wirtualnej „opiece” nad wybranym psiakiem, poprzez pomoc w jego utrzymaniu, leczeniu i wyżywieniu. W praktyce polega to na deklaracji comiesięcznych wpłat na rzecz wybranego przez Państwa podopiecznego (w kwestii jej wysokości oraz długości pomocy to Państwo są jedynymi decydentami).</p>
             <h4>PO CO?</h4>
             <p>Stare, chore, nierasowe. To takim psom najtrudniej znaleźć nowy dom. Zwyczajnie nikt ich nie chce. I choćbyśmy stawali na rzęsach, często rzeczywistość okazuje się brutalna, takiemu psu nie da się znaleźć domu. W Ośrodku mają zapewnione miejsce do końca swoich dni. Będziemy je kochać, opiekować się nimi i pielęgnować jak najlepiej potrafimy. To takie psy w Ośrodku mieszkają latami, wymagają zwiększonej opieki weterynaryjnej, często specjalistycznej karmy, leków, stąd wymagają największych nakładów finansowych. Adopcja wirtualna = comiesięczny datek na rzecz konkretnego psa, stanowi środek do celu – zapewnienie jak najlepszych warunków bytowych.</p>
@@ -50,7 +50,7 @@ const VirtualAdoption = () => {
             <div className="dogs-box">
                 {dogsToDisplay}
             </div>
-            <Button text="Pieski gotowe do standardowej adopcji również można wespierać wirtualnie do czasu znalezienia nowego domu :)" addClass="outstanding" link="/adoptuj"/>
+            <Button text="Pieski gotowe do standardowej adopcji również można wespierać wirtualnie do czasu znalezienia nowego domu :)" addClass="outstanding" addClass2="center" link="/adoptuj"/>
         </main>
     );
 }

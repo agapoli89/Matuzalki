@@ -67,12 +67,12 @@ function App() {
         <Route path={`/kontakt`}>
           <Contact />
         </Route>
-        <Route path="/:url">
+        <Route path="/psy/:url">
           <Dog />
         </Route>
         <Route path="/">
           <HomePage />
-        </Route>
+        </Route> 
       </Switch>
       <Footer />
     </div>
