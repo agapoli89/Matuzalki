@@ -10,6 +10,9 @@
     color: $background-main-color;
     border-radius: 5px;
     box-sizing: border-box;
+    & a {
+        color: $background-main-color;
+    }
     &__header {
         width: 100%;
         text-align: center;
