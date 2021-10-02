@@ -1,0 +1,57 @@
+@import '../../style/variables.scss';
+@import '../../style/breakpoints.scss';
+
+.reports {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    &__year-box {
+        margin: 1rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    &__year {
+        margin: 1rem;
+        padding: 1rem 2rem;
+        background-color: $logo-color;
+        color: $background-main-color;
+        font-size: 2rem;
+        font-weight: 800;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    @include large {
+        & h2 {
+            font-size: 2rem;
+        }
+        &__year-box {
+            margin: 2rem;
+        }
+        &__year {
+            margin: 3rem;
+            padding: 1.5rem 3rem;
+            font-size: 3rem;
+        }
+    }
+}
+
+.report {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    &__item {
+        margin: 1rem;
+        padding: 1rem;
+        border: solid 0.2rem $main-text-color;
+    }
+    & a {
+        color: $main-text-color;
+        text-decoration: none; 
+    }
+}
