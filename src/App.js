@@ -4,6 +4,7 @@ import Navigation from './Components/Navigation/Navigation';
 import Header from './Components/Header/Header';
 import HomePage from './Pages/HomePage/HomePage';
 import AboutFundation from './Pages/Fundation/AboutFundation';
+import OurPlace from './Pages/Fundation/OurPlace';
 import Members from './Pages/Fundation/Members';
 import VolunteersAndFriends from './Pages/Fundation/VolunteersAndFriends';
 import Reports from './Pages/Fundation/Reports';
@@ -33,6 +34,9 @@ function App() {
         </Route>
         <Route path="/czlonkowie">
           <Members />
+        </Route>
+        <Route path="/nasze-miejsce">
+          <OurPlace />
         </Route>
         <Route path="/sprawozdania">
           <Reports/>
