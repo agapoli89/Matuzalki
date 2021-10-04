@@ -12,7 +12,7 @@ const PopupBox = ({text, dogName}) => {
                 </>}
                 {text === "Adoptuj" ? <p>Napisz lub zadzwoń:</p> : <p>By dowiedzieć się czego {dogName} aktualnie potrzebuje, skontaktuj się z nami. Porozmawiamy!</p>}
                 <address><a href='mailto:fpz@matuzalki.pl'>e-mail: fpz@matuzalki.pl</a></address>
-                <address><a href='tel:+48519499344'>tel.: 519 499 344 (ELA)</a></address>
+                <address><a href='tel:+48519499344'>tel.: 519 499 344 (Ela)</a></address>
                 <p>
                     (Jeżeli nie odbieramy, prosimy o&nbsp;SMSa z&nbsp;hasłem "ADOPCJA_{text === "Adoptuj wirtualnie" && "WIRTUALNA_"}{dogName.toUpperCase()}" - oddzwonimy)
                 </p>
