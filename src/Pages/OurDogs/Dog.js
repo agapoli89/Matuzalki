@@ -117,7 +117,7 @@ const Dog = () => {
                 </div>
                 {dogStatus === "withHome" && <div className="mission-completed">
                     <span>Misja: Nowy dom -</span>
-                    <strong>WYKONANA!</strong>
+                    <strong>- WYKONANA!</strong>
                 </div>}
             </div>
             <div className="dog-page__buttons-box">
