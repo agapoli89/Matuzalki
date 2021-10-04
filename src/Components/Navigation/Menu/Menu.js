@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link } from 'react-router-dom';
 import { IoTriangle } from "react-icons/io5";
+import { motion } from "framer-motion"
 
 import MenuLink from "./MenuLink";
 import { menuData } from "./MenuData.js";
@@ -27,31 +28,59 @@ const Menu = ({toggleMenu, isTopOfThePage}) => {
         setIsAdoptionMenuOpen(false);
         setIsSupportMenuOpen(prev => !prev)
     };
+    const toggleAllMenu = () => {
+        toggleMenu();
+        setIsFundationMenuOpen(false);
+        setIsAdoptionMenuOpen(false);
+        setIsSupportMenuOpen(false);
+    }
+
+    const variants = {
+        open: { opacity: 1, y: 0 },
+        closed: { opacity: 0, y: "-100%" },
+    }
 
     return (  
-        <ul className={`menu ${!isTopOfThePage && "menu--scrolled"}`}>
+        <motion.ul 
+            initial={{opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1 }}
+            className={`menu ${!isTopOfThePage && "menu--scrolled"}`}
+        >
             <li className="menu__item" onClick={toggleFundationMenu} >
                 <div className="menu__item__text" >Fundacja <i className={`menu__item__icon  ${!isFundationMenuOpen && "menu__item__icon--rotated"}`}><IoTriangle /></i></div>
-                <ul className={`submenu ${!isFundationMenuOpen && "submenu--invisible"}`} >
-                    {menuData.fundationSubmenu.map(({id, description, url}) =>  <MenuLink key={id} text={description} url={url} toggleMenu={toggleMenu}/>
+                <motion.ul 
+                    animate={isFundationMenuOpen ? "open" : "closed"}
+                    variants={variants}
+                    className={`submenu ${!isFundationMenuOpen && "submenu--invisible"}`} 
+                >
+                    {menuData.fundationSubmenu.map(({id, description, url}) => <MenuLink key={id} text={description} url={url} toggleMenu={toggleMenu}/>
                     )}
-                </ul>
+                </motion.ul>
             </li>
             <li className="menu__item" onClick={toggleAdoptionMenu}>
                 <div className="menu__item__text" >Nasze psy <i className={`menu__item__icon  ${!isAdoptionMenuOpen && "menu__item__icon--rotated"}`}><IoTriangle /></i></div>
-                <ul className={`submenu ${!isAdoptionMenuOpen && "submenu--invisible"}`}>
+                <motion.ul 
+                    animate={isAdoptionMenuOpen ? "open" : "closed"}
+                    variants={variants}
+                    className={`submenu ${!isAdoptionMenuOpen && "submenu--invisible"}`}
+                >
                     {menuData.adoptionSubmenu.map(({id, description, url}) => <MenuLink key={id} text={description} url={url} toggleMenu={toggleMenu}/>)}
-                </ul>
+                </motion.ul>
             </li>
             <li className="menu__item" onClick={toggleSupportMenu}>
                 <div className="menu__item__text" >Wsparcie <i className={`menu__item__icon  ${!isSupportMenuOpen && "menu__item__icon--rotated"}`}><IoTriangle /></i></div>
-                <ul className={`submenu ${!isSupportMenuOpen && "submenu--invisible"}`}>
+                <motion.ul 
+                    animate={isSupportMenuOpen ? "open" : "closed"}
+                    variants={variants}
+                    className={`submenu ${!isSupportMenuOpen && "submenu--invisible"}`}
+                >
                     {menuData.supportSubmenu.map(({id, description, url}) => <MenuLink key={id} text={description} url={url}
                     toggleMenu={toggleMenu}/>)}
-                </ul>
+                </motion.ul>
             </li>
-            <li className="menu__item"><Link to="/kontakt" onClick={toggleMenu}>Kontakt</Link></li>
-        </ul>
+            <li className="menu__item"><Link to="/kontakt" onClick={toggleAllMenu}>Kontakt</Link></li>
+        </motion.ul>
     );
 }
  
