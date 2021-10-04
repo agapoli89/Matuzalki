@@ -16,6 +16,11 @@ export const menuData = {
             url: "/wolontariusze-i-psijaciele",
         },
         {
+            id: 13,
+            description: "Nasze miejsce",
+            url: "/nasze-miejsce",
+        },
+        {
             id: 4,
             description: "Sprawozdania",
             url: "/sprawozdania",
