@@ -46,9 +46,20 @@
     font-weight: 800;
     text-transform: uppercase;
     &__item {
+        width: 90%;
         margin: 1rem;
         padding: 1rem;
         border: solid 0.2rem $main-text-color;
+        text-align: center;
+        @include small {
+            width: 60%;
+        }
+        @include medium {
+            width: 50%;
+        }
+        @include large {
+            width: 30%;
+        }
     }
     & a {
         color: $main-text-color;
