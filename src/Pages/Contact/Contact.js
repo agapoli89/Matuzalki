@@ -51,7 +51,7 @@ const Contact = () => {
                 <strong>Kod SWIFT : INGBPLPW</strong>
                 <strong style={{textAlign: 'center'}}>PL 35 1050 1575 1000 0090 3092 7744</strong>
             </section>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d160075.42195747368!2d17.028643425801842!3d51.178933478232786!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x677f3d2aac65a152!2sFundacja%20Pomocy%20Zwierz%C4%99tom%20%22Matuzalki%22!5e0!3m2!1spl!2spl!4v1633101089929!5m2!1spl!2spl" width="100%" height="450" allowfullscreen="" loading="lazy" title="map" className="contact__map"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d160075.42195747368!2d17.028643425801842!3d51.178933478232786!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x677f3d2aac65a152!2sFundacja%20Pomocy%20Zwierz%C4%99tom%20%22Matuzalki%22!5e0!3m2!1spl!2spl!4v1633101089929!5m2!1spl!2spl" width="100%" height="450" allowFullScreen="" loading="lazy" title="map" className="contact__map"></iframe>
         </main>
     );
 }
