@@ -79,7 +79,7 @@ const Menu = ({toggleMenu, isTopOfThePage}) => {
                     toggleMenu={toggleMenu}/>)}
                 </motion.ul>
             </li>
-            <li className="menu__item"><Link to="/kontakt" onClick={toggleAllMenu}>Kontakt</Link></li>
+            <Link to="/kontakt" onClick={toggleAllMenu}><li className="menu__item">Kontakt</li></Link>
         </motion.ul>
     );
 }

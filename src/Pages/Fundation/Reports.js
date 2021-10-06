@@ -18,7 +18,12 @@ const Reports = () => {
     const handleReportOpen = (e) => {
         const year = e.target.innerText;
         setIsReportOpen(year);  
+
+        setTimeout(() => {
+            window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' })
+        },50)
     }
+
 
     const imageFin = (year) => {
         switch (year) {

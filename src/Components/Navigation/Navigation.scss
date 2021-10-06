@@ -31,6 +31,10 @@
         padding-top: 1vh;
         margin-bottom: 0;
     }
+    & a {
+        text-decoration: none;
+        color: $logo-color;
+    }
     @include huge {
         justify-content: center;
     }

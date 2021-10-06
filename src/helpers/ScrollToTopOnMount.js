@@ -5,7 +5,7 @@ export default function ScrollToTop() {
   const { pathname } = useLocation();
 
     useEffect(() => {
-        if (pathname === "/" || pathname === "/jancio") {
+        if (pathname === "/" || pathname === "/jancio" || pathname === "/wsparli-nas") {
             window.scrollTo(0, 0);
         } else {
           const scrollPx = window.innerWidth > 992 ? Math.ceil((window.innerWidth * 35 / 100)) : 
