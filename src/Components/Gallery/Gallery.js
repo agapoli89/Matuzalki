@@ -2,8 +2,6 @@ import Lightbox from 'react-image-lightbox';
 import 'react-image-lightbox/style.css';
 import { useState } from 'react';
 
-
-
 const Gallery = ({handleIsGalleryOpen, images, captions}) => {
     
     const [photoIndex, setPhotoIndex] = useState(0);
