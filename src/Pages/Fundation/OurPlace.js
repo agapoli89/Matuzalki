@@ -2,6 +2,8 @@ import { useState } from "react";
 import Button from "../../components/Button/Button";
 import Gallery from "../../components/Gallery/Gallery";
 
+//based on: https://shaquillegalimba.medium.com/how-to-import-multiple-images-in-react-1936efeeae7b
+
 function importAll(r) {
 	let images = {};
     r.keys().forEach((item, index) => { images[item.replace('./', '')] = r(item); });
