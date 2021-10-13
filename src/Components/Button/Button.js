@@ -3,9 +3,7 @@ import './Button.scss';
 
 const Button = ({ text, link, addClass, addClass2, handleClick }) => {
 
-    console.log(link)
-
-    const buttonLink = <Link to={link} className="button-link">
+    const buttonLink = link && <Link to={link} className="button-link">
         <button className={`button button--${addClass} button--${addClass2}`} onClick={handleClick}>
             {text}
         </button>
