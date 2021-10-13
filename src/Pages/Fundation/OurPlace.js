@@ -68,8 +68,6 @@ const OurPlace = () => {
         imagesToGallery.push(images[`build${i}.jpg`].default)
     }
 
-    console.log(captions.length)
-
     return (  
         <main className="article article--justify">
             <h2>Nasze miejsce</h2>
