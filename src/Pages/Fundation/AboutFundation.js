@@ -1,4 +1,4 @@
-import Button from '../../Components/Button/Button';
+import Button from '../../components/Button/Button';
 import './AboutFundation.scss';
 
 const AboutFundation = () => {

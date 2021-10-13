@@ -2,9 +2,9 @@ import { useLocation, useHistory } from "react-router-dom";
 import { useState } from "react";
 
 import { dogs } from './DogsData';
-import Button from "../../Components/Button/Button";
-import Gallery from "../../Components/Gallery/Gallery";
-import PopupBox from "../../Components/PopupBox/PopupBox";
+import Button from "../../components/Button/Button";
+import Gallery from "../../components/Gallery/Gallery";
+import PopupBox from "../../components/PopupBox/PopupBox";
 import './Dog.scss';
 
 import manius from '../../images/dogs/behindTheRainbow/manius.jpg';

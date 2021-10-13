@@ -1,6 +1,6 @@
 import { useState } from "react";
-import Gallery from "../../Components/Gallery/Gallery";
-import Button from "../../Components/Button/Button";
+import Gallery from "../../components/Gallery/Gallery";
+import Button from "../../components/Button/Button";
 
 import jancio1 from '../../images/dogs/jancio/jancio1.jpg';
 import jancio2 from '../../images/dogs/jancio/jancio2.jpg';

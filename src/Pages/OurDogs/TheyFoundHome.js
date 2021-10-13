@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from 'react-router-dom';
-import Button from '../../Components/Button/Button';
-import Gallery from "../../Components/Gallery/Gallery";
+import Button from '../../components/Button/Button';
+import Gallery from "../../components/Gallery/Gallery";
 import { IoHeart } from "react-icons/io5";
 import { dogs } from './DogsData';
 

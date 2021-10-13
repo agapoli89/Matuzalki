@@ -1,6 +1,6 @@
 import KRS from '../../images/krs.png';
 
-import Button from '../../Components/Button/Button';
+import Button from '../../components/Button/Button';
 import './HowToHelpUs.scss';
 
 const HowToHelpUs = () => {

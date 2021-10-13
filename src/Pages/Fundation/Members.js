@@ -1,6 +1,6 @@
 import { IoMail } from "react-icons/io5";
 import { FaPhoneAlt } from "react-icons/fa";
-import Button from '../../Components/Button/Button';
+import Button from '../../components/Button/Button';
 import { members } from './MembersData';
 
 import Miron from '../../images/people/Miron2.png';

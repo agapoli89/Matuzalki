@@ -1,5 +1,5 @@
 import { useMediaQuery } from 'react-responsive';
-import Button from '../../Components/Button/Button';
+import Button from '../../components/Button/Button';
 
 import '../../App.scss';
 import './HomePage.scss';

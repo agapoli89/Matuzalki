@@ -1,6 +1,6 @@
 import { useState } from "react";
-import Button from "../../Components/Button/Button";
-import Gallery from "../../Components/Gallery/Gallery";
+import Button from "../../components/Button/Button";
+import Gallery from "../../components/Gallery/Gallery";
 
 function importAll(r) {
 	let images = {};

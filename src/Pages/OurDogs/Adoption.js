@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { dogs } from './DogsData';
-import Button from '../../Components/Button/Button';
+import Button from '../../components/Button/Button';
 import './Adoption.scss';
 
 import stella from '../../images/dogs/toAdopt/stella.jpg';
