@@ -3,29 +3,12 @@ import { dogs } from './DogsData';
 import Button from '../../components/Button/Button';
 import './Adoption.scss';
 
-import stella from '../../images/dogs/toAdopt/stella.jpg';
-import maksio from '../../images/dogs/behindTheRainbow/maksio.jpg';
-import sylwek from '../../images/dogs/behindTheRainbow/sylwek.jpg';
-
 const Adoption = () => {
 
-    const imgToDisplay = (url) => {
-        switch (url) {
-            case "stella":
-                return stella;
-            case "maksio":
-                return maksio;
-            case "sylwek":
-                return sylwek;
-            default:
-                return maksio;
-        }
-    }
-
     const dogsToAdopt = dogs.filter(({dogStatus}) => dogStatus === "toAdopt");
-    const dogsToDisplay = dogsToAdopt.map(({id, dogName, url})=> (
+    const dogsToDisplay = dogsToAdopt.map(({id, dogName, url, imgExtention})=> (
         <Link key={id} to={`psy/${url}`} className="dog dog--to-adopt">
-            <div className="dog__picture"><img src={imgToDisplay(url)} alt={dogName} /></div>
+            <div className="dog__picture"><img src={require(`../../images/dogs/toAdopt/${url}.${imgExtention}`).default} alt={dogName} /></div>
             <p className="dog__text">{dogName}</p>
         </Link>
     ))

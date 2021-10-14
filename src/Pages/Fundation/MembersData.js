@@ -7,7 +7,7 @@ export const members = [
         email: "miron.chmielewski@matuzalki.pl",
         linkToPhone: "+48518756665",
         phone: "518 756 665",
-        img: "Miron",
+        url: require('../../images/people/Miron2.png'),
     },
     {
         id: 2,
@@ -15,7 +15,7 @@ export const members = [
         position: "Sekretarz, V-ce Prezes Zarządu Fundacji",
         description: "Z\xa0wykształcenia PETagog. Adoptowała z\xa0Ośrodka starszego psa i\xa0tak już została. Absolutnie zaangażowana w\xa0psie sprawy, pełna sił do działania. Stanowi dla Fundacji swoiste okno na Wielkopolskę (z\xa0racji zamieszkania).",
         email: "barbara.laskowska@matuzalki.pl",
-        img: "Basia",
+        url: require('../../images/people/Basia2.png'),
     },
     {
         id: 3,
@@ -25,14 +25,14 @@ export const members = [
         email: "ela.platt@matuzalki.pl",
         linkToPhone: "+48519499344",
         phone: "519 499 344",
-        img: "Ela",
+        url: require('../../images/people/Ela2.png'),
     },
     {
         id: 4,
         name: "Joanna Szwed",
         position: "Przewodnicząca Rady Fundacji",
         description: "Z wyksztacenia ekonomista, analityk. Najbliższy jej sercu jest los kotów. Karmicielka i\xa0dobra dusza, szczególne tych wolnożyjących na terenie Wrocławia. Od lat walczy o\xa0ich bezpieczeństwo i\xa0godne życie.",
-        img: "Joasia",
+        url: require('../../images/people/Joasia.png'),
     },
     {
         id: 5,
@@ -40,13 +40,13 @@ export const members = [
         position: "Członek Rady Fundacji",
         description: "Pani technik WETerynarii, z\xa0nami od zawsze, pomaga w\xa0działaniach Fundacji. Psiara pełną gębą. Asia pracuje w\xa0Gabinecie weterynaryjnym ORZ KĄTNA, który sprawuje opiekę nad naszym stadem.",
         email: "joanna.wegrzynowicz@matuzalki.pl",
-        img: "Asia",
+        url: require('../../images/people/Asia2.png'),
     },
     {
         id: 6,
         name: "Magda Mrówczyńska",
         position: "Członek Rady Fundacji",
         description: 'Z wyksztacenia PSYcholog, prawdziwy mistrz organizacji . W\xa0pracy na rzecz Fundacji kieruje się mottem: "...problemy należy rozwiązywać, a\xa0nie tworzyć..." Odpowiedzialna za sprawy organizacyjne i\xa0prawne.',
-        img: "Magda",
+        url: require('../../images/people/Magda.png'),
     },
 ]

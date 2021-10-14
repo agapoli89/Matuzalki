@@ -7,73 +7,91 @@ import { dogs } from './DogsData';
 
 import './Dogs.scss';
 
-import julka1 from '../../images/dogs/theyFoundHome/toGallery/julka1.jpg';
-import julka2 from '../../images/dogs/theyFoundHome/toGallery/julka2.jpg';
-import stefanek1 from '../../images/dogs/theyFoundHome/toGallery/stefanek1.jpg';
-import stefanek2 from '../../images/dogs/theyFoundHome/toGallery/stefanek2.jpg';
-import pepa1 from '../../images/dogs/theyFoundHome/toGallery/pepa1.jpg';
-import tytus1 from '../../images/dogs/theyFoundHome/toGallery/tytus1.jpg';
-import lucek1 from '../../images/dogs/theyFoundHome/toGallery/lucek1.jpg';
-import kotek1 from '../../images/dogs/theyFoundHome/toGallery/kotek1.jpg';
-import kotek2 from '../../images/dogs/theyFoundHome/toGallery/kotek2.jpg';
-import nina1 from '../../images/dogs/theyFoundHome/toGallery/nina1.jpg';
-import misza1 from '../../images/dogs/theyFoundHome/toGallery/misza1.jpg';
-import kostek1 from '../../images/dogs/theyFoundHome/toGallery/kostek1.jpg';
-import pepe1 from '../../images/dogs/theyFoundHome/toGallery/pepe1.jpg';
-import lala1 from '../../images/dogs/theyFoundHome/toGallery/lala1.jpg';
-import szymon1 from '../../images/dogs/theyFoundHome/toGallery/szymon1.jpg';
+import kostek from '../../images/dogs/withHome/kostek.jpg';
+import pepe from '../../images/dogs/withHome/pepe.jpg';
+import pepezpiotrkiem from '../../images/dogs/withHome/pepezpiotrkiem.jpg';
+import pepezul from '../../images/dogs/withHome/pepezul.jpg';
+import lalawparku from '../../images/dogs/withHome/lalkawparku.jpg';
+import lalanapleckach from '../../images/dogs/withHome/lalkanapleckach.jpg';
+import lalawsamochodzie from '../../images/dogs/withHome/lalkawsamochodzie.jpg';
+import szymonkolderka from '../../images/dogs/withHome/szymonkolderka.jpg';
+import szymon from '../../images/dogs/withHome/szymon.jpg';
 
-import kostek from '../../images/dogs/theyFoundHome/kostek.jpg';
-import pepe from '../../images/dogs/theyFoundHome/pepe.jpg';
-import pepezpiotrkiem from '../../images/dogs/theyFoundHome/pepezpiotrkiem.jpg';
-import pepezul from '../../images/dogs/theyFoundHome/pepezul.jpg';
-import lalawparku from '../../images/dogs/theyFoundHome/lalkawparku.jpg';
-import lalanapleckach from '../../images/dogs/theyFoundHome/lalkanapleckach.jpg';
-import lalawsamochodzie from '../../images/dogs/theyFoundHome/lalkawsamochodzie.jpg';
-import szymonkolderka from '../../images/dogs/theyFoundHome/szymonkolderka.jpg';
-import szymon from '../../images/dogs/theyFoundHome/szymon.jpg';
-
-import liza from '../../images/dogs/theyFoundHome/liza.jpg';
-import witek from '../../images/dogs/theyFoundHome/witek.jpg';
-import zuzia from '../../images/dogs/theyFoundHome/zuzia.jpg';
-import adus from '../../images/dogs/theyFoundHome/adus.jpg';
-import klara from '../../images/dogs/theyFoundHome/klara.jpg';
-import tobiasz from '../../images/dogs/theyFoundHome/tobiasz.jpg';
-import atos from '../../images/dogs/theyFoundHome/atos.jpg';
-
-const images = [julka1, julka2, stefanek1, stefanek2, pepa1, tytus1, lucek1, kotek1, kotek2, nina1, misza1, kostek1, pepe1, lala1, szymon1];
-const captions = ["Julka - teraz już LUSIA!", "...pies obronny!", "Stefanek rozpoczyna radosne życie...", "...w prawdziwym łóżeczku :)", "Pepa też ma już swój szczęśliwy dom!", "Tytus zamieszkał przy górce Słowiańskiej.", "Lucek (vel Ciapek) swoje szczęście odnalazł w Kiełczowie", "Happy endem skończyła się też historia kociej mamy i jej trójki małych kociąt...", "...tutaj już w drodze do nowych domków :)", "Nina", "Misza", "Kostek - jego historię opisaliśmy niżej :)", "Pepe w blasku zachodzącego słońca... (jego historię również przeczytasz poniżej :))", "Lala (z opowieści poniżej) w swoim naturalnym środowisku ;)", "Szymon w parku."]
+const images = [
+    {
+        name: "julka1",
+        caption: "Julka - teraz już LUSIA!" 
+    },
+    {
+        name: "julka2",
+        caption: "...pies obronny!" 
+    },
+    {
+        name: "stefanek1",
+        caption: "Stefanek rozpoczyna radosne życie..." 
+    },
+    {
+        name: "stefanek2",
+        caption: "...w prawdziwym łóżeczku :)" 
+    },
+    {
+        name: "pepa1",
+        caption: "Pepa też ma już swój szczęśliwy dom!" 
+    },
+    {
+        name: "tytus1",
+        caption: "Tytus zamieszkał przy górce Słowiańskiej." 
+    },
+    {
+        name: "lucek1",
+        caption: "Lucek (vel Ciapek) swoje szczęście odnalazł w Kiełczowie" 
+    },
+    {
+        name: "kotek1",
+        caption: "Happy endem skończyła się też historia kociej mamy i jej trójki małych kociąt..." 
+    },
+    {
+        name: "kotek2",
+        caption: "...tutaj już w drodze do nowych domków :)" 
+    },
+    {
+        name: "nina1",
+        caption: "Nina" 
+    },
+    {
+        name: "misza1",
+        caption: "Misza" 
+    },
+    {
+        name: "kostek1",
+        caption: "Kostek - jego historię opisaliśmy niżej :)" 
+    },
+    {
+        name: "pepe1",
+        caption: "Pepe w blasku zachodzącego słońca... (jego historię również przeczytasz poniżej :))" 
+    },
+    {
+        name: "lala1",
+        caption: "Lala (z opowieści poniżej) w swoim naturalnym środowisku ;)" 
+    },
+    {
+        name: "szymon1",
+        caption: "Szymon w parku."
+    }
+];
 
 const TheyFoundHome = () => {
+
+    const imagesToGallery = images.map(({name}) => require(`../../images/dogs/withHome/toGallery/${name}.jpg`).default);
+    const captions = images.map(({caption}) => caption);
 
     const [isGalleryOpen, setIsGalleryOpen] = useState(false);
     const handleIsGalleryOpen = () => setIsGalleryOpen(prev => !prev)
 
-    const imgToDisplay = (url) => {
-        switch (url) {
-            case "liza":
-                return liza;
-            case "witek":
-                return witek;
-            case "zuzia":
-                return zuzia;
-            case "adus":
-                return adus;
-            case "klara":
-                return klara;
-            case "tobiasz":
-                return tobiasz;
-            case "atos":
-                return atos;
-            default:
-                return lala1;
-        }
-    }
-
     const dogsWithHome = dogs.filter(({dogStatus}) => dogStatus === "withHome");
-    const dogsToDisplay = dogsWithHome.map(({id, dogName, url})=> (
+    const dogsToDisplay = dogsWithHome.map(({id, dogName, url, imgExtention})=> (
         <Link key={id} to={`psy/${url}`} className="dog dog--to-adopt">
-            <div className="dog__picture"><img src={imgToDisplay(url)} alt={dogName} /></div>
+            <div className="dog__picture"><img src={require(`../../images/dogs/withHome/${url}.${imgExtention}`).default} alt={dogName} /></div>
             <p className="dog__text">{dogName}</p>
         </Link>
     ))
@@ -83,7 +101,7 @@ const TheyFoundHome = () => {
             <h2>Im się udało!</h2>
             <p>Za każdym razem kiedy jakiś Matuzalek znajduje kochający dom, nasze serca rosną. Daje nam to pewność, że nasza praca ma sens. Razem możemy sprawić by ta sekcja stale się rozrastała <IoHeart /></p>
             <Button text="Zobacz galerię szczęśliwych Matuzalków" addClass="center" handleClick={handleIsGalleryOpen}/>
-            {isGalleryOpen && <Gallery handleIsGalleryOpen={handleIsGalleryOpen} images={images} captions={captions}/>}
+            {isGalleryOpen && <Gallery handleIsGalleryOpen={handleIsGalleryOpen} images={imagesToGallery} captions={captions}/>}
             <h3>A oto kilka radosnych historii. Czekamy również na opowieść od Ciebie :)</h3>
             <div className="they-found-home">
                 <h4 className="they-found-home__dog-history">Kostek...</h4>

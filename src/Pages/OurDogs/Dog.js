@@ -7,24 +7,7 @@ import Gallery from "../../components/Gallery/Gallery";
 import PopupBox from "../../components/PopupBox/PopupBox";
 import './Dog.scss';
 
-import manius from '../../images/dogs/behindTheRainbow/manius.jpg';
 import maksio from '../../images/dogs/behindTheRainbow/maksio.jpg';
-import sylwek from '../../images/dogs/behindTheRainbow/sylwek.jpg';
-import ignas from '../../images/dogs/behindTheRainbow/ignas.jpg';
-import misiek from '../../images/dogs/behindTheRainbow/misiek.jpg';
-import wicia from '../../images/dogs/behindTheRainbow/vicia.jpg';
-import diana from '../../images/dogs/behindTheRainbow/diana.jpg';
-import pluto from '../../images/dogs/behindTheRainbow/pluto.jpg';
-import piotrus from '../../images/dogs/behindTheRainbow/piotrus.jpg';
-import stella from '../../images/dogs/toAdopt/stella.jpg';
-import donek from '../../images/dogs/toAdoptVirtually/donek.jpg';
-import liza from '../../images/dogs/theyFoundHome/liza.jpg';
-import witek from '../../images/dogs/theyFoundHome/witek.jpg';
-import zuzia from '../../images/dogs/theyFoundHome/zuzia.jpg';
-import adus from '../../images/dogs/theyFoundHome/adus.jpg';
-import klara from '../../images/dogs/theyFoundHome/klara.jpg';
-import tobiasz from '../../images/dogs/theyFoundHome/tobiasz.jpg';
-import atos from '../../images/dogs/theyFoundHome/atos.jpg';
 
 import stella1 from '../../images/dogs/toGallery/stella1.png';
 import stella2 from '../../images/dogs/toGallery/stella2.jpg';
@@ -34,51 +17,8 @@ const Dog = () => {
     const location = useLocation().pathname;
     const history = useHistory();
     const dog = dogs.find(({url}) => url === location.slice(5));
-    const { dogName, dogStatus, par1, par2, url, strongInfo, link, linkInfo, link2, linkInfo2, isGallery } = dog;
+    const { dogName, dogStatus, par1, par2, url, strongInfo, link, linkInfo, link2, linkInfo2, isGallery, imgExtention } = dog;
     const handleGoBack = history.goBack;
-
-    const imgToDisplay = (url) => {
-        switch (url) {
-            case "manius":
-                return manius;
-            case "maksio":
-                return maksio;
-            case "sylwek":
-                return sylwek;
-            case "ignas":
-                return ignas;
-            case "misiek":
-                return misiek;
-            case "wicia":
-                return wicia;
-            case "diana":
-                return diana;
-            case "pluto":
-                return pluto;
-            case "piotrus":
-                return piotrus;
-            case "stella":
-                return stella;
-            case "donek":
-                return donek;
-            case "liza":
-                return liza;
-            case "witek":
-                return witek;
-            case "zuzia":
-                return zuzia;
-            case "adus":
-                return adus;
-            case "klara":
-                return klara;
-            case "tobiasz":
-                return tobiasz;
-            case "atos":
-                return atos;
-            default:
-                return maksio;
-        }
-    }
 
     const toGallery = (url) => {
         switch (url) {
@@ -113,7 +53,7 @@ const Dog = () => {
                     {isGallery && <Button text={"Zobacz więcej zdjęć"} handleClick={handleIsGalleryOpen} addClass={"center"}/>}
                     {isGalleryOpen && <Gallery handleIsGalleryOpen={handleIsGalleryOpen} images={toGallery(url).img} captions={toGallery(url).caption}/>}
                 </div>
-                <div className="dog-page__img-box"><img src={imgToDisplay(url)} alt={dogName}/>
+                <div className="dog-page__img-box"><img src={require(`../../images/dogs/${dogStatus}/${url}.${imgExtention}`).default} alt={dogName}/>
                 </div>
                 {dogStatus === "withHome" && <div className="mission-completed">
                     <span>Misja: Nowy dom -</span>

@@ -2,26 +2,12 @@ import { Link } from 'react-router-dom';
 import { dogs } from './DogsData';
 import Button from '../../components/Button/Button';
 
-import donek from '../../images/dogs/toAdoptVirtually/donek.jpg';
-import sylwek from '../../images/dogs/behindTheRainbow/sylwek.jpg';
-
 const VirtualAdoption = () => {
 
-    const imgToDisplay = (url) => {
-        switch (url) {
-            case "stella":
-                return donek;
-            case "sylwek":
-                return sylwek;
-            default:
-                return donek;
-        }
-    }
-
     const dogsToAdoptVirtually = dogs.filter(({dogStatus}) => dogStatus === "toAdoptVirtually");
-    const dogsToDisplay = dogsToAdoptVirtually.map(({id, dogName, url})=> (
+    const dogsToDisplay = dogsToAdoptVirtually.map(({id, dogName, url, imgExtention})=> (
         <Link key={id} to={`psy/${url}`} className="dog dog--to-adopt">
-            <div className="dog__picture"><img src={imgToDisplay(url)} alt={dogName} /></div>
+            <div className="dog__picture"><img src={require(`../../images/dogs/toAdoptVirtually/${url}.${imgExtention}`).default} alt={dogName} /></div>
             <p className="dog__text">{dogName}</p>
         </Link>
     ))

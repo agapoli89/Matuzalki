@@ -4,16 +4,10 @@ import Button from '../../components/Button/Button';
 import '../../App.scss';
 import './HomePage.scss';
 
-import Miron from '../../images/people/Miron.png';
-import Basia from '../../images/people/Basia.png';
-import Ela from '../../images/people/Ela.png';
-import Joasia from '../../images/people/Joasia.png';
-import Asia from '../../images/people/Asia.png';
-import Magda from '../../images/people/Magda.png';
-import Bronek from '../../images/dogs/Bronek.png';
-import Donek from '../../images/dogs/Donek.png';
-import Ignas from '../../images/dogs/Ignas.png';
 import KRS from '../../images/krs.png';
+
+const membersImages = ["Miron", "Basia", "Ela", "Joasia", "Asia", "Magda"];
+const dogsImages = ["Bronek", "Donek", "Ignas"]
 
 const HomePage = () => {
     const isLargeView = useMediaQuery({ query: '(min-width:992px)' });
@@ -30,12 +24,7 @@ const HomePage = () => {
                 </div>
                 
                 {isLargeView && <div className="about-us-large__image-box">
-                    <div className="polaroid polaroid--Miron"><img src={Miron} alt="Miron" />Miron</div>
-                    <div className="polaroid polaroid--Basia"><img src={Basia} alt="Basia" />Basia</div>
-                    <div className="polaroid polaroid--Ela"><img src={Ela} alt="Ela" />Ela</div>
-                    <div className="polaroid polaroid--Joasia"><img src={Joasia} alt="Joasia" />Joasia</div>
-                    <div className="polaroid polaroid--Asia"><img src={Asia} alt="Asia" />Asia</div>
-                    <div className="polaroid polaroid--Magda"><img src={Magda} alt="Magda" />Magda</div>
+                    {membersImages.map(memberImg => <div key={memberImg} className={`polaroid polaroid--${memberImg}`}><img src={require(`../../images/people/${memberImg}.png`).default} alt={memberImg} />{memberImg}</div>)}
                 </div>}
             </article>
             <article className="article article--outstanding">
@@ -43,9 +32,7 @@ const HomePage = () => {
                 <div className="home-page__description">
                     <h3 className="home-page__title">Adopcja...</h3>
                     {isLargeView && <div className="home-page__description__image-box">
-                        <div className="polaroid polaroid--Bronek"><img src={Bronek} alt="Bronek" />Bronek</div>
-                        <div className="polaroid polaroid--Donek"><img src={Donek} alt="Donek" />Donek</div>
-                        <div className="polaroid polaroid--Ignas"><img src={Ignas} alt="Ignaś" />Ignaś</div>
+                        {dogsImages.map(dogImg => <div key={dogImg} className={`polaroid polaroid--${dogImg}`}><img src={require(`../../images/dogs/${dogImg}.png`).default} alt={dogImg} />{dogImg === "Ignas" ? "Ignaś" : dogImg}</div>)}
                     </div>}
                     <div className="home-page__text home-page__text--outstanding">
                         <p style={{marginTop: 0}}>...temat rzeka. O&nbsp;adopcji bezpańskich zwierząt napisano już chyba wszystko. Bezspornie jest to&nbsp;forma pomocy udzielona komuś, kto nie potrafi obronić się sam i&nbsp;jest całkowicie zależny od&nbsp;człowieka.</p>
