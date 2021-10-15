@@ -95,6 +95,16 @@ export const dogs = [
         link2: "https://www.youtube.com/watch?v=2rUKj22m3P4",
         linkInfo2: "Pierwszy spacerek Stelli :)",
         isGallery: true,
+        imagesToGallery: [
+            {
+                img: "stella1.png",
+                caption: "Stella z misiem :)",
+            },
+            {
+                img: "stella2.jpg",
+                caption: "I jak jej nie kochać...?",
+            },
+        ]
     },
     {
         id: 11,

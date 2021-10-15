@@ -2,21 +2,44 @@ import { useState } from "react";
 import Gallery from "../../components/Gallery/Gallery";
 import Button from "../../components/Button/Button";
 
-import jancio1 from '../../images/dogs/jancio/jancio1.jpg';
-import jancio2 from '../../images/dogs/jancio/jancio2.jpg';
-import jancio3 from '../../images/dogs/jancio/jancio3.jpg';
-import jancio4 from '../../images/dogs/jancio/jancio4.jpg';
-import jancio5 from '../../images/dogs/jancio/jancio5.jpg';
-import jancio6 from '../../images/dogs/jancio/jancio6.jpg';
-import jancio7 from '../../images/dogs/Jancio.png';
-
-const images = [jancio1, jancio2,jancio3, jancio4, jancio5, jancio6, jancio7];
-const captions = ["Jańcio...", "...tak wyglądał kiedy do nas trafił...", "...został oskalpowany przez wnyki", "...", "Tutaj już w pełnej formie, kiedy przez lata rządził sforą :)", "Niezwłoczna amputacja łapki zaraz po zdiagnozowaniu mięsaka dawała nadzieję na szybki powrót do zdrowia...", "Właśnie tak chcemy go zapamiętać!"];
+const images = [
+    {
+        url: '1.jpg',
+        caption: "Jańcio...",
+    },
+    {
+        url: '2.jpg',
+        caption: "...tak wyglądał kiedy do nas trafił...", 
+    },
+    {
+        url: '3.jpg',
+        caption: "...został oskalpowany przez wnyki", 
+    },
+    {
+        url: '4.jpg',
+        caption: "...", 
+    },
+    {
+        url: '5.jpg',
+        caption: "Tutaj już w pełnej formie, kiedy przez lata rządził sforą :)", 
+    },
+    {
+        url: '6.jpg',
+        caption: "Niezwłoczna amputacja łapki zaraz po zdiagnozowaniu mięsaka dawała nadzieję na szybki powrót do zdrowia...", 
+    },
+    {
+        url: '7.png',
+        caption: "Właśnie tak chcemy go zapamiętać!", 
+    },
+]
 
 const Jancio = () => {
 
     const [isGalleryOpen, setIsGalleryOpen] = useState(false);
-    const handleIsGalleryOpen = () => setIsGalleryOpen(prev => !prev)
+    const handleIsGalleryOpen = () => setIsGalleryOpen(prev => !prev);
+
+    const imagesToGallery = images.map(({url}) => require(`../../images/dogs/jancio/jancio${url}`).default);
+    const captionsToGallery = images.map(({caption}) => caption);
 
     return (  
         <main className="article article--justify">
@@ -26,7 +49,7 @@ const Jancio = () => {
             <p>Na wiosnę 2017 roku zdiagnozowano mięsaka. Szybka amputacja łapy i nadzieja, że jeszcze nie jest za późno...</p>
             <p>...jesienią 2017 pojawiły się przerzuty do płuc i inych organów. W listopadzie Jańcio pożegnał się ze swoimi braćmi i z nami ....odszedł za Tęczowy Most.</p>
             <Button text={"Zobacz galerię zdjęć Jańcia"} handleClick={handleIsGalleryOpen} addClass={"center"}/>
-            {isGalleryOpen && <Gallery handleIsGalleryOpen={handleIsGalleryOpen} images={images} captions={captions}/>}
+            {isGalleryOpen && <Gallery handleIsGalleryOpen={handleIsGalleryOpen} images={imagesToGallery} captions={captionsToGallery}/>}
         </main>
     );
 }
